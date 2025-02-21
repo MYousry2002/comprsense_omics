@@ -1,0 +1,19 @@
+name: comprsense
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - wget
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - seaborn
+  - jupyterlab
+  - pip
+  - pip:
+      - umap-learn
+      - scanpy
+      - spams-bin # unofficial but works on mac silicon
