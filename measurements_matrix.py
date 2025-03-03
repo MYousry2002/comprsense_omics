@@ -15,6 +15,7 @@ import os
 THREADS = 10
 
 from utilities import get_observations, compare_results
+from sparse_decoding import sparse_decode
 
 
 

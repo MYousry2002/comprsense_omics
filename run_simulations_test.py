@@ -18,15 +18,15 @@ from simulation import run_simulation
 
 
 # Set parameters
-adata_path = "dataset/cb_adult_mouse.h5ad"  # Path to your AnnData file
+adata_path = "dataset/cerebellum/cb_adult_mouse.h5ad"  # Path to your AnnData file
 gene_set_size = 1000  # Choose from 500, 1000, or 5000
 num_cells = 10000  # Number of cells to include in the simulation
 num_measurements = 200  # Number of measurement pools
 min_pools_per_gene = 4  # Minimum number of pools per gene
-max_pools_per_gene = 4  # Maximum number of pools per gene
+max_pools_per_gene = 8  # Maximum number of pools per gene
 sparsity = 0.02  # Sparsity constraint for sparse decoding
 num_modules = 50  # Number of gene modules
-dataset_dir = "./dataset/"  # Directory where datasets are stored
+dataset_dir = "./dataset/cerebellum/cb_mouse"  # Directory where datasets are stored
 
 # Run the simulation
 results = run_simulation(
