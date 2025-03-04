@@ -99,7 +99,26 @@ def find_best_coherence_matrices(m, g, max_pools_per_gene, min_pools_per_gene, U
         phi = random_double_balanced(m, g, max_pools_per_gene, min_pools_per_gene)  
 
         # Compute the 90th percentile of the cosine distance between projected feature vectors
-        coh_90 = np.percentile(1 - distance.pdist(phi.dot(U).T, 'cosine'), 90)
+        # coh_90 = np.percentile(1 - distance.pdist(phi.dot(U).T, 'cosine'), 90)
+
+        print("phi.shape:", phi.shape)
+        print("U.shape:", U.shape)
+        print("phi.dot(U).T shape:", phi.dot(U).T.shape)
+
+        if phi.shape[1] != U.shape[0]:
+            raise ValueError("Shape mismatch: phi and U cannot be multiplied.")
+
+        if phi.dot(U).T.shape[0] == 0 or phi.dot(U).T.shape[1] == 0:
+            raise ValueError("phi.dot(U).T results in an empty matrix!")
+
+        distances = 1 - distance.pdist(phi.dot(U).T, 'cosine')
+
+        # Skip if distances array is empty or contains NaNs
+        if distances.size == 0 or np.isnan(distances).any():
+            print("Skipping iteration: Distance matrix is empty or contains NaN values.")
+            coh_90 = np.nan  # Assign NaN to indicate skipped iteration
+        else:
+            coh_90 = np.percentile(distances, 90)
 
         # If the new `phi` has a better coherence score, replace the worst-performing matrix
         if coh_90 < best.max():  

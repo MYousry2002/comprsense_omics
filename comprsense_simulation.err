@@ -1,0 +1,188 @@
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+Traceback (most recent call last):
+  File "/projectnb/cisi/myousry/comprsense_omics/run_simulations.py", line 31, in <module>
+    results = run_simulation(
+              ^^^^^^^^^^^^^^^
+  File "/projectnb/cisi/myousry/comprsense_omics/simulation.py", line 73, in run_simulation
+    best_coh_scores, Phi_coh = find_best_coherence_matrices(m=num_measurements, g=train_data.shape[0], 
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py", line 102, in find_best_coherence_matrices
+    coh_90 = np.percentile(1 - distance.pdist(phi.dot(U).T, 'cosine'), 90)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4238, in percentile
+    return _quantile_unchecked(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4517, in _quantile_unchecked
+    return _ureduce(a,
+           ^^^^^^^^^^^
+  File "/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 3848, in _ureduce
+    r = func(a, **kwargs)
+        ^^^^^^^^^^^^^^^^^
+  File "/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4694, in _quantile_ureduce_func
+    result = _quantile(arr,
+             ^^^^^^^^^^^^^^
+  File "/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4816, in _quantile
+    slices_having_nans = np.isnan(arr[-1, ...])
+                                  ~~~^^^^^^^^^
+IndexError: index -1 is out of bounds for axis 0 with size 0
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+Traceback (most recent call last):
+  File "/projectnb/cisi/myousry/comprsense_omics/run_simulations.py", line 31, in <module>
+    results = run_simulation(
+              ^^^^^^^^^^^^^^^
+  File "/projectnb/cisi/myousry/comprsense_omics/simulation.py", line 73, in run_simulation
+    best_coh_scores, Phi_coh = find_best_coherence_matrices(m=num_measurements, g=train_data.shape[0], 
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py", line 102, in find_best_coherence_matrices
+    coh_90 = np.percentile(1 - distance.pdist(phi.dot(U).T, 'cosine'), 90)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4238, in percentile
+    return _quantile_unchecked(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4517, in _quantile_unchecked
+    return _ureduce(a,
+           ^^^^^^^^^^^
+  File "/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 3848, in _ureduce
+    r = func(a, **kwargs)
+        ^^^^^^^^^^^^^^^^^
+  File "/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4694, in _quantile_ureduce_func
+    result = _quantile(arr,
+             ^^^^^^^^^^^^^^
+  File "/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py", line 4816, in _quantile
+    slices_having_nans = np.isnan(arr[-1, ...])
+                                  ~~~^^^^^^^^^
+IndexError: index -1 is out of bounds for axis 0 with size 0
+
+
+Traceback (most recent call last):
+  File "/projectnb/cisi/myousry/comprsense_omics/run_simulations.py", line 31, in <module>
+    results = run_simulation(
+              ^^^^^^^^^^^^^^^
+  File "/projectnb/cisi/myousry/comprsense_omics/simulation.py", line 79, in run_simulation
+    best_rec_scores, Phi_best = find_best_reconstruction_matrices(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py", line 142, in find_best_reconstruction_matrices
+    y = get_observations(validate_data, phi, snr=5)  # Simulate pooled noisy measurements
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cisi/myousry/comprsense_omics/utilities.py", line 67, in get_observations
+    return Phi.dot(X0 + noise)
+           ^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'dot'
+
+
+
+
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:562: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis, **keepdims_kw)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/numpy/_core/_methods.py:147: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+Traceback (most recent call last):
+  File "/projectnb/cisi/myousry/comprsense_omics/run_simulations.py", line 31, in <module>
+    results = run_simulation(
+              ^^^^^^^^^^^^^^^
+  File "/projectnb/cisi/myousry/comprsense_omics/simulation.py", line 73, in run_simulation
+    best_coh_scores, Phi_coh = find_best_coherence_matrices(m=num_measurements, g=train_data.shape[0], 
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py", line 112, in find_best_coherence_matrices
+    raise ValueError("phi.dot(U).T results in an empty matrix!")
+ValueError: phi.dot(U).T results in an empty matrix!
+
+
+
+
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)

@@ -61,13 +61,14 @@ def run_simulation(
     train_data, validate_data, test_data = load_saved_data("subset_data", dataset_dir)
     
     # Generate gene modules matrix U using SMAF
-    U, W = smaf(train_data, num_modules, lda1=8, lda2=0.2, maxItr=100)
+    U, W = smaf(train_data, num_modules, lda1=8, lda2=0.2, maxItr=20,
+                use_chol=False, donorm=True, mode=1, mink=0., doprint=True)
     
     # Remove zero-contribution modules
     nz = (U.sum(axis=0) > 0)
     U = U[:, nz]
     
-    print("n_genes =", train_data.shape[0])
+    print("U dimentions =", U.shape)
     
     # Generate and evaluate measurement matrices based on coherence
     best_coh_scores, Phi_coh = find_best_coherence_matrices(m=num_measurements, g=train_data.shape[0], 

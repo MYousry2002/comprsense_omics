@@ -34,7 +34,7 @@ for num_measurements in num_measurements_values:
         num_cells=10000,
         num_measurements=num_measurements,
         min_pools_per_gene=4,
-        max_pools_per_gene=8,
+        max_pools_per_gene=4,
         sparsity=0.02,
         num_modules=50,
         dataset_dir="./dataset/cerebellum/cb_mouse"
