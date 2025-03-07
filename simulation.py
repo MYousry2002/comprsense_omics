@@ -28,6 +28,8 @@ def run_simulation(
     max_pools_per_gene, 
     sparsity, 
     num_modules,
+    lda1=8,
+    lda2=0.2,
     dataset_dir="./dataset/"
 ):
     """
@@ -42,6 +44,8 @@ def run_simulation(
         max_pools_per_gene (int): Maximum pools a gene can be assigned to.
         sparsity (float): Sparsity constraint for sparse decoding.
         num_modules (int): Number of gene modules (dictionary size in SMAF).
+        lda1 (float): Regularization parameter for SMAF.
+        lda2 (float): Regularization parameter for SMAF.
         dataset_dir (str): Directory where the dataset is stored.
     
     Returns:
@@ -60,20 +64,20 @@ def run_simulation(
     # Load the split data
     train_data, validate_data, test_data = load_saved_data("subset_data", dataset_dir)
     
-    # Generate gene modules matrix U using SMAF
-    U, W = smaf(train_data, num_modules, lda1=8, lda2=0.2, maxItr=20,
+    # Generate gene modules matrix U using SMAF with specified lda1 and lda2
+    U, W = smaf(train_data, num_modules, lda1=lda1, lda2=lda2, maxItr=20,
                 use_chol=False, donorm=True, mode=1, mink=0., doprint=True)
     
     # Remove zero-contribution modules
     nz = (U.sum(axis=0) > 0)
     U = U[:, nz]
     
-    print("U dimentions =", U.shape)
+    print("U dimensions =", U.shape)
     
     # Generate and evaluate measurement matrices based on coherence
     best_coh_scores, Phi_coh = find_best_coherence_matrices(m=num_measurements, g=train_data.shape[0], 
         min_pools_per_gene=min_pools_per_gene, max_pools_per_gene=max_pools_per_gene, U=U,
-                                                            num_matrices=5000, num_best=500,
+        num_matrices=5000, num_best=500,
     )
     
     # Find best measurement matrices based on reconstruction quality

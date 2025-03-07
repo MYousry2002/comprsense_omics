@@ -37,6 +37,8 @@ for num_measurements in num_measurements_values:
         max_pools_per_gene=4,
         sparsity=0.02,
         num_modules=50,
+        lda1=8,
+        lda2=0.2,
         dataset_dir="./dataset/cerebellum/cb_mouse"
     )
     

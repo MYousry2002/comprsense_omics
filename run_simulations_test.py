@@ -26,6 +26,8 @@ min_pools_per_gene = 4  # Minimum number of pools per gene
 max_pools_per_gene = 8  # Maximum number of pools per gene
 sparsity = 0.02  # Sparsity constraint for sparse decoding
 num_modules = 50  # Number of gene modules
+lda1=8,
+lda2=0.2,
 dataset_dir = "./dataset/cerebellum/cb_mouse"  # Directory where datasets are stored
 
 # Run the simulation
@@ -38,6 +40,8 @@ results = run_simulation(
     max_pools_per_gene=max_pools_per_gene,
     sparsity=sparsity,
     num_modules=num_modules,
+    lda1=lda1,
+    lda2=lda2,
     dataset_dir=dataset_dir
 )
 
