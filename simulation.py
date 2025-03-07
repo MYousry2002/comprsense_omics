@@ -77,7 +77,7 @@ def run_simulation(
     # Generate and evaluate measurement matrices based on coherence
     best_coh_scores, Phi_coh = find_best_coherence_matrices(m=num_measurements, g=train_data.shape[0], 
         min_pools_per_gene=min_pools_per_gene, max_pools_per_gene=max_pools_per_gene, U=U,
-        num_matrices=5000, num_best=500,
+        num_matrices=1, num_best=1,
     )
     
     # Find best measurement matrices based on reconstruction quality
