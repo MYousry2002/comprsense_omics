@@ -46,7 +46,6 @@ def downsample_adata(adata, gene_set_size, cell_count=10000, output_path="datase
     adata.var_names_make_unique()
     
     # Randomly select cells
-    np.random.seed(23)
     selected_cells = np.random.choice(adata.obs_names, size=cell_count, replace=False)
     
     # Subset the AnnData object

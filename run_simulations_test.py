@@ -18,7 +18,7 @@ from simulation import run_simulation
 
 
 # Set parameters
-adata_path = "dataset/cerebellum/cb_adult_mouse.h5ad"  # Path to your AnnData file
+adata_path = "dataset/pmotorcortex/pmotorcortex.h5ad"  # Path to your AnnData file
 gene_set_size = 1000  # Choose from 500, 1000, or 5000
 num_cells = 10000  # Number of cells to include in the simulation
 num_measurements = 200  # Number of measurement pools
@@ -28,7 +28,7 @@ sparsity = 0.02  # Sparsity constraint for sparse decoding
 num_modules = 50  # Number of gene modules
 lda1=8,
 lda2=0.2,
-dataset_dir = "./dataset/cerebellum/cb_mouse"  # Directory where datasets are stored
+dataset_dir = "./dataset/pmotorcortex/pmotorcortex_mouse"  # Directory where datasets are stored
 
 # Run the simulation
 results = run_simulation(
