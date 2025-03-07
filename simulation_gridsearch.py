@@ -29,8 +29,8 @@ if job_id >= len(parameter_combinations):
 num_measurements, num_modules, lda1, lda2, sparsity, gene_set_size = parameter_combinations[job_id]
 print(f"Running simulation with: num_measurements={num_measurements}, num_modules={num_modules}, lda1={lda1}, lda2={lda2}, sparsity={sparsity}, gene_set_size={gene_set_size}")
 
-# Run ~100 simulations and take the average best score
-num_repeats = 100
+# Run ~10 simulations and take the average best score
+num_repeats = 10
 best_scores = []
 
 for _ in range(num_repeats):
