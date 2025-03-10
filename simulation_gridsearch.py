@@ -29,13 +29,13 @@ if job_id >= len(parameter_combinations):
 num_measurements, num_modules, lda1, lda2, sparsity, gene_set_size = parameter_combinations[job_id]
 print(f"Running simulation with: num_measurements={num_measurements}, num_modules={num_modules}, lda1={lda1}, lda2={lda2}, sparsity={sparsity}, gene_set_size={gene_set_size}")
 
-# Run ~10 simulations and take the average best score
-num_repeats = 10
+# Run ~100 simulations and take the average best score
+num_repeats = 100
 best_scores = []
 
 for _ in range(num_repeats):
     results = run_simulation(
-        adata_path="dataset/cerebellum/cb_adult_mouse.h5ad",
+        adata_path="dataset/pmotorcortex/pmotorcortex.h5ad",
         gene_set_size=gene_set_size,
         num_cells=10000,
         num_measurements=num_measurements,
@@ -45,7 +45,7 @@ for _ in range(num_repeats):
         num_modules=num_modules,
         lda1=lda1,
         lda2=lda2,
-        dataset_dir="./dataset/cerebellum/cb_mouse"
+        dataset_dir="./dataset/pmotorcortex/pmotorcortex_mouse"
     )
     best_scores.append(results["best_score"])
 
