@@ -20,7 +20,7 @@ from sparse_decoding import sparse_decode
 
 
 def smaf(X, d, lda1, lda2, maxItr=10, UW=None, posW=False, posU=True, use_chol=False, 
-         module_lower=1, activity_lower=1, donorm=False, mode=1, mink=5, U0=[], 
+         module_lower=1, activity_lower=1, donorm=False, mode=1, mink=0, U0=[], 
          U0_delta=0.1, doprint=False):
     """
     Sparse Module Activity Factorization (SMAF) to learn gene modules.

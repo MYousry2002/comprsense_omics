@@ -1,8 +1,21 @@
 import os
+import sys
 import numpy as np
 import pandas as pd
-import itertools
+import spams
 from simulation import run_simulation
+import itertools
+
+THREADS = 10  # Ensure it's globally defined as an integer
+
+# Ensure results directory exists
+os.makedirs("results/grid_search", exist_ok=True)
+
+# Set fixed parameters
+adata_path = "dataset/pmotorcortex/pmotorcortex.h5ad"
+num_cells = 10000
+dataset_dir = "./dataset/pmotorcortex/pmotorcortex_mouse"
+num_repeats = 100  # Ensure each parameterization runs 100 times  # Number of times to repeat each simulation
 
 # Define parameter search space
 num_measurements_values = list(range(10, 100, 10)) + list(range(100, 500, 50)) + [500]
@@ -17,8 +30,8 @@ parameter_combinations = list(itertools.product(
     num_measurements_values, num_modules_values, lda1_values, lda2_values, sparsity_values, gene_set_sizes
 ))
 
-# Read job array index
-job_id = int(os.getenv('SGE_TASK_ID', '1')) - 1
+# Read job array index (allow manual override for local testing)
+job_id = int(os.getenv('SGE_TASK_ID', sys.argv[1] if len(sys.argv) > 1 else '1')) - 1
 
 # Ensure valid job ID
 if job_id >= len(parameter_combinations):
@@ -29,15 +42,21 @@ if job_id >= len(parameter_combinations):
 num_measurements, num_modules, lda1, lda2, sparsity, gene_set_size = parameter_combinations[job_id]
 print(f"Running simulation with: num_measurements={num_measurements}, num_modules={num_modules}, lda1={lda1}, lda2={lda2}, sparsity={sparsity}, gene_set_size={gene_set_size}")
 
-# Run ~100 simulations and take the average best score
-num_repeats = 100
-best_scores = []
+# Ensure correct data types
+num_measurements = int(num_measurements)
+num_modules = int(num_modules)
+lda1 = float(lda1)
+lda2 = float(lda2)
+sparsity = float(sparsity)
 
-for _ in range(num_repeats):
+# Run simulations and take the average best score
+best_scores = []
+for i in range(num_repeats):
+    print(f"Running repeat {i+1}/{num_repeats}...")
     results = run_simulation(
-        adata_path="dataset/pmotorcortex/pmotorcortex.h5ad",
+        adata_path=adata_path,
         gene_set_size=gene_set_size,
-        num_cells=10000,
+        num_cells=num_cells,
         num_measurements=num_measurements,
         min_pools_per_gene=4,
         max_pools_per_gene=4,
@@ -45,15 +64,16 @@ for _ in range(num_repeats):
         num_modules=num_modules,
         lda1=lda1,
         lda2=lda2,
-        dataset_dir="./dataset/pmotorcortex/pmotorcortex_mouse"
+        dataset_dir=dataset_dir
     )
     best_scores.append(results["best_score"])
+    del results  # Free memory
 
 # Compute average best score
 avg_best_score = np.mean(best_scores)
 
 # Save results
-df_results = pd.DataFrame([{
+results_df = pd.DataFrame([{
     "num_measurements": num_measurements,
     "num_modules": num_modules,
     "lda1": lda1,
@@ -64,5 +84,5 @@ df_results = pd.DataFrame([{
 }])
 
 csv_path = f"results/grid_search/results_{job_id}.csv"
-df_results.to_csv(csv_path, index=False)
+results_df.to_csv(csv_path, index=False)
 print(f"Results saved: {csv_path}")
