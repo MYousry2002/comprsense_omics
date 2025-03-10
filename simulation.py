@@ -51,48 +51,79 @@ def run_simulation(
     Returns:
         dict: Best measurement matrix and evaluation metrics.
     """
-    
-    # Load the AnnData object
-    adata = sc.read_h5ad(adata_path)
-    
-    # Downsample the AnnData object
-    adata_subset = downsample_adata(adata, gene_set_size, num_cells, output_path=dataset_dir)
-    
-    # Split the dataset into train, validation, and test sets
-    split_and_save_data(adata_subset, "subset_data", dataset_dir)
-    
-    # Load the split data
-    train_data, validate_data, test_data = load_saved_data("subset_data", dataset_dir)
-    
-    # Generate gene modules matrix U using SMAF with specified lda1 and lda2
-    U, W = smaf(train_data, num_modules, lda1=lda1, lda2=lda2, maxItr=20,
-                use_chol=False, donorm=True, mode=1, mink=0., doprint=True)
-    
-    # Remove zero-contribution modules
-    nz = (U.sum(axis=0) > 0)
-    U = U[:, nz]
-    
-    print("U dimensions =", U.shape)
-    
-    # Generate and evaluate measurement matrices based on coherence
-    best_coh_scores, Phi_coh = find_best_coherence_matrices(m=num_measurements, g=train_data.shape[0], 
-        min_pools_per_gene=min_pools_per_gene, max_pools_per_gene=max_pools_per_gene, U=U,
-        num_matrices=1, num_best=1,
-    )
-    
-    # Find best measurement matrices based on reconstruction quality
-    best_rec_scores, Phi_best = find_best_reconstruction_matrices(
-        Phi_coh, validate_data, U, sparsity, num_best=50
-    )
-    
-    # Select the best matrix based on reconstruction quality
-    best_idx = np.argmax(best_rec_scores)
-    best_matrix = Phi_best[best_idx]
-    best_score = best_rec_scores[best_idx]
-    
-    return {
-        "best_matrix": best_matrix,
-        "best_score": best_score,
-        "best_coherence_scores": best_coh_scores,
-        "best_reconstruction_scores": best_rec_scores
-    }
+    try:
+        # --- Main Simulation Pipeline ---
+        
+        # Load the AnnData object
+        adata = sc.read_h5ad(adata_path)
+        
+        # Downsample and get filename
+        downsampled_file = downsample_adata(adata, gene_set_size, num_cells, output_path=dataset_dir)
+        
+        # Load the downsampled data
+        adata_subset = sc.read_h5ad(downsampled_file)
+        
+        # Use filename prefix for subsequent steps
+        dataset_prefix = os.path.basename(downsampled_file).replace(".h5ad", "")
+        
+        # Split data and get list of generated files
+        generated_files = split_and_save_data(adata_subset, dataset_prefix, dataset_dir)
+        
+        # Load split data
+        train_data, validate_data, test_data = load_saved_data(dataset_prefix, dataset_dir)
+        
+        # Run SMAF
+        U, W = smaf(train_data, num_modules, lda1=lda1, lda2=lda2, maxItr=20,
+                    use_chol=False, donorm=True, mode=1, mink=0., doprint=True)
+        
+        # Remove zero-contribution modules
+        nz = (U.sum(axis=0) > 0)
+        U = U[:, nz]
+        
+        print("U dimensions =", U.shape)
+        
+        # Generate and evaluate measurement matrices
+        best_coh_scores, Phi_coh = find_best_coherence_matrices(
+            m=num_measurements, g=train_data.shape[0], 
+            min_pools_per_gene=min_pools_per_gene, 
+            max_pools_per_gene=max_pools_per_gene, 
+            U=U,
+            num_matrices=1, num_best=1,
+        )
+        
+        best_rec_scores, Phi_best = find_best_reconstruction_matrices(
+            Phi_coh, validate_data, U, sparsity, num_best=1
+        )
+        
+        best_idx = np.argmax(best_rec_scores)
+        best_matrix = Phi_best[best_idx]
+        best_score = best_rec_scores[best_idx]
+
+        return {
+            "best_matrix": best_matrix,
+            "best_score": best_score,
+            "best_coherence_scores": best_coh_scores,
+            "best_reconstruction_scores": best_rec_scores
+        }
+
+    finally:
+        # --- Cleanup Section ---
+        print("\nCleaning up temporary files...")
+
+        def safe_delete(filepath):
+            """Safely delete a file if it exists."""
+            try:
+                if os.path.exists(filepath):
+                    os.remove(filepath)
+                    print(f"Deleted: {filepath}")
+            except Exception as e:
+                print(f"Error deleting {filepath}: {e}")
+
+        # Remove downsampled .h5ad file
+        safe_delete(downsampled_file)
+
+        # Remove generated .npy files
+        for file_path in generated_files:
+            safe_delete(file_path)
+
+        print("Cleanup complete.\n")

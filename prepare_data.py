@@ -10,12 +10,13 @@ import scipy.sparse as sp
 from scipy.io import mmread
 from scipy.stats import spearmanr, pearsonr, entropy
 from scipy.spatial import distance
+import time
 import os
 
 THREADS = 10
 
 
-def downsample_adata(adata, gene_set_size, cell_count=10000, output_path="dataset/cb_adult_mouse"):
+def downsample_adata(adata, gene_set_size, cell_count=10000, output_path="./dataset/pmotorcortex_mouse"):
     """
     Downsamples an AnnData object based on a specified gene set size.
     
@@ -23,10 +24,10 @@ def downsample_adata(adata, gene_set_size, cell_count=10000, output_path="datase
     - adata: AnnData object to be downsampled
     - gene_set_size: int, number of genes to include (500, 1000, or 5000)
     - cell_count: int, number of cells to select (default: 10,000)
-    - output_path: str, base path for saving the downsampled file
+    - output_path: str, directory for saving the downsampled file
     
     Returns:
-    - AnnData object with selected genes and cells
+    - str: Path to the downsampled AnnData file
     """
     assert gene_set_size in [500, 1000, 5000], "Gene set size must be 500, 1000, or 5000."
     
@@ -45,21 +46,29 @@ def downsample_adata(adata, gene_set_size, cell_count=10000, output_path="datase
     # Ensure unique gene names
     adata.var_names_make_unique()
     
-    # Randomly select cells
+    # Prevent oversampling if cell_count is greater than available cells
+    cell_count = min(cell_count, adata.n_obs)  
     selected_cells = np.random.choice(adata.obs_names, size=cell_count, replace=False)
     
     # Subset the AnnData object
     adata_subset = adata[selected_cells, selected_genes]
     
+    # Ensure the output directory exists
+    os.makedirs(output_path, exist_ok=True)  
+    
+    # Generate a unique filename
+    timestamp = int(time.time())
+    output_file = os.path.join(output_path, f"downsampled_{gene_set_size}genes_{os.getpid()}_{timestamp}.h5ad")
+    
     # Save the new dataset
-    output_file = f"{output_path}_{gene_set_size}genes.h5ad"
     adata_subset.write(output_file)
     print(f"Downsampled dataset saved to {output_file}")
     
-    return adata_subset
+    return output_file  # Return the filename
 
 
-def split_and_save_data(adata, dataset_prefix, output_dir="./dataset/"):
+
+def split_and_save_data(adata, dataset_prefix, output_dir="./dataset/pmotorcortex/pmotorcortex_mouse"):
     """
     Splits `adata.X` into train, validation, and test subsets and saves them in the specified directory.
     
@@ -72,17 +81,13 @@ def split_and_save_data(adata, dataset_prefix, output_dir="./dataset/"):
     
     # Ensure `adata.X` is in a compatible format
     X = adata.X
-    
-    # Convert sparse matrices to compressed row format
     if sp.issparse(X):  
         X = X.tocsr()
     else:
         X = np.asarray(X, dtype=np.float64)
     
-    # Get total number of samples (cells)
+    # Split dataset (50% Train, 25% Validate, 25% Test)
     num_cells = X.shape[0]
-    
-    # Define split sizes (50% Train, 25% Validate, 25% Test)
     train_idx, temp_idx = train_test_split(np.arange(num_cells), test_size=0.50, random_state=23)
     validate_idx, test_idx = train_test_split(temp_idx, test_size=0.50, random_state=23)
     
@@ -91,7 +96,7 @@ def split_and_save_data(adata, dataset_prefix, output_dir="./dataset/"):
     validate_data = X[validate_idx]
     test_data = X[test_idx]
     
-    # Convert all subsets to dense arrays before saving
+    # Convert to dense arrays before saving
     train_data = np.asarray(train_data.todense() if sp.issparse(train_data) else train_data, dtype=np.float64)
     validate_data = np.asarray(validate_data.todense() if sp.issparse(validate_data) else validate_data, dtype=np.float64)
     test_data = np.asarray(test_data.todense() if sp.issparse(test_data) else test_data, dtype=np.float64)
@@ -99,20 +104,24 @@ def split_and_save_data(adata, dataset_prefix, output_dir="./dataset/"):
     # Convert train_data to Fortran-contiguous format for SPAMS
     train_data = np.asfortranarray(train_data)
     
-    # Save subsets with manually inputted prefix
-    np.save(os.path.join(output_dir, f"{dataset_prefix}_train_data.npy"), train_data)
-    np.save(os.path.join(output_dir, f"{dataset_prefix}_validate_data.npy"), validate_data)
-    np.save(os.path.join(output_dir, f"{dataset_prefix}_test_data.npy"), test_data)
+    # Save files
+    file_paths = []
+    for subset, data in zip(["train", "validate", "test"], [train_data, validate_data, test_data]):
+        file_path = os.path.join(output_dir, f"{dataset_prefix}_{subset}_data.npy")
+        np.save(file_path, data)
+        file_paths.append(file_path)
     
     # Print dataset shapes
     print(f"Train data shape: {train_data.shape}")
     print(f"Validation data shape: {validate_data.shape}")
     print(f"Test data shape: {test_data.shape}")
-    print(f"Datasets saved in {output_dir} as {dataset_prefix}_train_data.npy, {dataset_prefix}_validate_data.npy, and {dataset_prefix}_test_data.npy")
+    print(f"Datasets saved in {output_dir} with prefix '{dataset_prefix}'")
+    
+    return file_paths  # Return list of generated files
 
 
 
-def load_saved_data(dataset_name, input_dir="./dataset/"):
+def load_saved_data(dataset_name, input_dir="./dataset/pmotorcortex/pmotorcortex_mouse"):
     """
     Loads the train, validation, and test datasets from the specified directory using the given dataset name.
     
