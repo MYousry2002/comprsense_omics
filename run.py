@@ -9,7 +9,7 @@ import itertools
 THREADS = 10  # Ensure it's globally defined as an integer
 
 # Ensure results directory exists
-os.makedirs("results/grid_search", exist_ok=True)
+os.makedirs("results/simulation", exist_ok=True)
 
 # Set fixed parameters
 adata_path = "dataset/pmotorcortex/pmotorcortex.h5ad"
@@ -85,6 +85,6 @@ results_df = pd.DataFrame([{
     "avg_best_score": avg_best_score
 }])
 
-csv_path = "results/grid_search/all_results.csv"
+csv_path = "results/simulation/all_results.csv"
 results_df.to_csv(csv_path, mode='a', header=not os.path.exists(csv_path), index=False)
 print(f"Results saved: {csv_path}")
