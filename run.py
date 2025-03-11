@@ -18,12 +18,12 @@ dataset_dir = "./dataset/pmotorcortex/pmotorcortex_mouse"
 num_repeats = 10  # Ensure each parameterization runs 100 times  # Number of times to repeat each simulation
 
 # Define parameter search space
-num_measurements_values = [10, 25, 50, 75, 100, 200, 350, 500]
-num_modules_values = [10, 30, 50, 70, 100]
-lda1_values = np.linspace(4, 14, 5)
-lda2_values = np.linspace(0.1, 1, 5)
-sparsity_values = np.linspace(0.01, 0.08, 5)
-gene_set_sizes = [500, 1000, 5000]
+num_measurements_values = [10, 25, 50, 75, 100, 200, 350, 500]  # 8 values
+num_modules_values = [10, 30, 50, 70, 100]  # 5 values
+lda1_values = np.linspace(4, 14, 5)  # 5 values
+lda2_values = np.linspace(0.1, 1, 5)  # 5 values
+sparsity_values = np.linspace(0.01, 0.08, 5)  # 5 values
+gene_set_sizes = [500, 1000, 5000]  # 3 values
 
 # Generate all parameter combinations
 parameter_combinations = list(itertools.product(
