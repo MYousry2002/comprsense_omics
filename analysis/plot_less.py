@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the data
-file_path = "../results/simulation/less_results_test.csv"
+file_path = "../results/simulation/less_results.csv"
 data = pd.read_csv(file_path)
 
 # Create a scatter plot for lda1 vs avg_best_score
