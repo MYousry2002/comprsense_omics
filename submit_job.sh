@@ -3,7 +3,7 @@
 #$ -N simulation
 #$ -l h_rt=96:00:00       # Request 48 hours runtime
 #$ -pe omp 18             # Request 18 cores per node
-#$ -t 1-15000            # Run 4500 parallel jobs
+#$ -t 1-15000            # Run 15000 parallel jobs
 #$ -o /projectnb/cisi/myousry/comprsense_omics/logs/simulation.log
 #$ -e /projectnb/cisi/myousry/comprsense_omics/logs/simulation.err
 

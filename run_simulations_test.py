@@ -27,7 +27,7 @@ max_pools_per_gene = 4  # Maximum number of pools per gene
 sparsity = 0.02  # Sparsity constraint for sparse decoding
 num_modules = 50  # Number of gene modules
 lda1=8
-lda2=0.2
+lda2=8
 dataset_dir = "./dataset/pmotorcortex/pmotorcortex_mouse"  # Directory where datasets are stored
 
 # Run the simulation
