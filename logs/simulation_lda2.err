@@ -1,0 +1,58 @@
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py:95: RuntimeWarning: divide by zero encountered in remainder
+  if np.mod(x, num_matrices // 10) == 0:  # Print progress every 10% of iterations
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py:95: RuntimeWarning: divide by zero encountered in remainder
+  if np.mod(x, num_matrices // 10) == 0:  # Print progress every 10% of iterations
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py:95: RuntimeWarning: divide by zero encountered in remainder
+  if np.mod(x, num_matrices // 10) == 0:  # Print progress every 10% of iterations
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py:95: RuntimeWarning: divide by zero encountered in remainder
+  if np.mod(x, num_matrices // 10) == 0:  # Print progress every 10% of iterations
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py:95: RuntimeWarning: divide by zero encountered in remainder
+  if np.mod(x, num_matrices // 10) == 0:  # Print progress every 10% of iterations
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py:95: RuntimeWarning: divide by zero encountered in remainder
+  if np.mod(x, num_matrices // 10) == 0:  # Print progress every 10% of iterations
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py:95: RuntimeWarning: divide by zero encountered in remainder
+  if np.mod(x, num_matrices // 10) == 0:  # Print progress every 10% of iterations
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py:95: RuntimeWarning: divide by zero encountered in remainder
+  if np.mod(x, num_matrices // 10) == 0:  # Print progress every 10% of iterations
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py:95: RuntimeWarning: divide by zero encountered in remainder
+  if np.mod(x, num_matrices // 10) == 0:  # Print progress every 10% of iterations
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
+/projectnb/cisi/myousry/comprsense_omics/module_dictionary.py:84: RuntimeWarning: invalid value encountered in divide
+  U = U / np.linalg.norm(U, axis=0)
+/projectnb/cisi/myousry/comprsense_omics/measurements_matrix.py:95: RuntimeWarning: divide by zero encountered in remainder
+  if np.mod(x, num_matrices // 10) == 0:  # Print progress every 10% of iterations
+/projectnb/bioinfor/myousry/miniconda3/envs/comprsense/lib/python3.12/site-packages/scipy/spatial/distance.py:685: RuntimeWarning: invalid value encountered in scalar divide
+  dist = 1.0 - uv / math.sqrt(uu * vv)
