@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import os
 import sys
 import numpy as np
@@ -5,7 +7,7 @@ import pandas as pd
 import spams
 
 # Get the absolute path of the project's root directory
-ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 # Add `src/` to sys.path
 sys.path.insert(0, os.path.join(ROOT_DIR, "src"))
@@ -23,19 +25,19 @@ adata_path = os.path.join(ROOT_DIR, "dataset/pmotorcortex/pmotorcortex.h5ad")
 dataset_dir = os.path.join(ROOT_DIR, "dataset/pmotorcortex/pmotorcortex_mouse")
 
 num_cells = 10000
-num_modules = 40
+num_measurements = 100  # Fixed number of measurements
 lda1 = 8.0
 lda2 = 8.0
 sparsity = 0.02
 num_repeats = 10  # Ensure each parameterization runs multiple times
 
-# Define parameter search space with remaining variable parameters
-num_measurements_values = [10, 25, 50, 75, 100, 200, 350, 500]  # 8 values
+# Define parameter search space with varying `num_modules` values
+num_modules_values = [80, 90, 100, 120]
 gene_set_sizes = [500, 1000, 5000]  # 3 values
 
 # Generate all parameter combinations
-parameter_combinations = [(num_measurements, gene_set_size) 
-                          for num_measurements in num_measurements_values 
+parameter_combinations = [(num_modules, gene_set_size) 
+                          for num_modules in num_modules_values 
                           for gene_set_size in gene_set_sizes]
 
 # Read job array index (allow manual override for local testing)
@@ -47,11 +49,11 @@ if job_id >= len(parameter_combinations):
     exit(1)
 
 # Extract parameters for this job
-num_measurements, gene_set_size = parameter_combinations[job_id]
+num_modules, gene_set_size = parameter_combinations[job_id]
 print(f"Running simulation with: num_measurements={num_measurements}, num_modules={num_modules}, lda1={lda1}, lda2={lda2}, sparsity={sparsity}, gene_set_size={gene_set_size}")
 
 # Ensure correct data types
-num_measurements = int(num_measurements)
+num_modules = int(num_modules)
 gene_set_size = int(gene_set_size)
 
 # Run simulations and take the average best score
@@ -62,11 +64,11 @@ for i in range(num_repeats):
         adata_path=adata_path,
         gene_set_size=gene_set_size,
         num_cells=num_cells,
-        num_measurements=num_measurements,
+        num_measurements=num_measurements,  # Fixed at 100
         min_pools_per_gene=4,
         max_pools_per_gene=4,
         sparsity=sparsity,
-        num_modules=num_modules,
+        num_modules=num_modules,  # Varying parameter
         lda1=lda1,
         lda2=lda2,
         dataset_dir=dataset_dir
@@ -81,8 +83,8 @@ avg_best_score = np.mean(best_scores)
 
 # Save results
 results_df = pd.DataFrame([{
-    "num_measurements": num_measurements,
-    "num_modules": num_modules,
+    "num_measurements": num_measurements,  # Fixed
+    "num_modules": num_modules,  # Varying parameter
     "lda1": lda1,
     "lda2": lda2,
     "sparsity": sparsity,
@@ -90,6 +92,6 @@ results_df = pd.DataFrame([{
     "avg_best_score": avg_best_score
 }])
 
-csv_path = "output/measurements.csv"
+csv_path = "output/modules_experiment.csv"  # Updated filename
 results_df.to_csv(csv_path, mode='a', header=not os.path.exists(csv_path), index=False)
 print(f"Results saved: {csv_path}")
