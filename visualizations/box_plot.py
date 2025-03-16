@@ -9,8 +9,8 @@ data = pd.read_csv(file_path)
 plt.figure(figsize=(8, 6))
 data.boxplot(column='avg_best_score', by='lda1', grid=False)
 plt.xlabel("lda1")
-plt.ylabel("avg_best_score")
-plt.title("LDA1 vs Avg Best Score")
+plt.ylabel("Average Score")
+plt.title("LDA1 vs Average Score")
 plt.suptitle("")  # Remove default title
 plt.xticks(rotation=45)
 output_filename = "lda1_vs_avg_best_score_boxplot.png"
@@ -22,8 +22,8 @@ print(f"Plot saved as {output_filename} in the current directory.")
 plt.figure(figsize=(8, 6))
 data.boxplot(column='avg_best_score', by='lda2', grid=False)
 plt.xlabel("lda2")
-plt.ylabel("avg_best_score")
-plt.title("LDA2 vs Avg Best Score")
+plt.ylabel("Average Score")
+plt.title("LDA2 vs Average Score")
 plt.suptitle("")  # Remove default title
 plt.xticks(rotation=45)
 output_filename = "lda2_vs_avg_best_score_boxplot.png"

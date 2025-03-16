@@ -34,7 +34,7 @@ for filename, x_var in file_mapping.items():
 
         # Customize plot
         plt.xlabel(x_var.replace("_", " ").title())
-        plt.ylabel("Avg Best Score")
+        plt.ylabel("Average Score")
         plt.title(f"{x_var.replace('_', ' ').title()} vs. Avg Best Score")
         plt.legend(title="Gene Set Size")
         plt.grid(False)

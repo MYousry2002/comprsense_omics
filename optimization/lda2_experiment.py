@@ -32,7 +32,7 @@ sparsity = 0.02
 num_repeats = 10  # Ensure each parameterization runs multiple times
 
 # Define parameter search space with the specified `lda2` values
-lda2_values = [24, 27, 30, 35] # [0.1, 0.2, 0.5, 0.8, 1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+lda2_values = [0.1, 0.2, 0.5, 0.8, 1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 gene_set_sizes = [500, 1000, 5000]  # 3 values
 
 # Generate all parameter combinations
