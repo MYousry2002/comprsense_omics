@@ -25,13 +25,13 @@ dataset_dir = os.path.join(ROOT_DIR, "dataset/pmotorcortex/pmotorcortex_mouse")
 
 # Set parameters
 gene_set_size = 1000  # Choose from 500, 1000, or 5000
-num_cells = 10000  # Number of cells to include in the simulation
+num_cells = 100000  # Number of cells to include in the simulation
 num_measurements = 200  # Number of measurement pools
 min_pools_per_gene = 4  # Minimum number of pools per gene
 max_pools_per_gene = 4  # Maximum number of pools per gene
 sparsity = 0.02  # Sparsity constraint for sparse decoding
 num_modules = 50  # Number of gene modules
-lda1=8
+lda1=20
 lda2=8
 
 # Run the simulation
