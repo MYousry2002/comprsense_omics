@@ -88,11 +88,11 @@ def run_simulation(
             min_pools_per_gene=min_pools_per_gene, 
             max_pools_per_gene=max_pools_per_gene, 
             U=U,
-            num_matrices=1, num_best=1,
+            num_matrices=5, num_best=3,
         )
         
         best_rec_scores, Phi_best = find_best_reconstruction_matrices(
-            Phi_coh, validate_data, U, sparsity, num_best=1
+            Phi_coh, validate_data, U, sparsity, num_best=3
         )
         
         best_idx = np.argmax(best_rec_scores)
