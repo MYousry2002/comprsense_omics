@@ -32,8 +32,8 @@ sparsity = 0.02
 num_repeats = 10  # Ensure each parameterization runs multiple times
 
 # Define parameter search space
-num_measurements_values = [50, 400, 500] # [100, 150, 200, 250, 300]  # 5 values
-gene_set_sizes = [500, 1000, 5000]
+num_measurements_values = [500] # [100, 150, 200, 250, 300]  # 5 values
+gene_set_sizes = [500]
 
 # Generate all parameter combinations
 parameter_combinations = [(num_measurements, gene_set_size) 

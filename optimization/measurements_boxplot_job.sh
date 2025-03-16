@@ -3,7 +3,7 @@
 #$ -N measurements_boxplot_simulation
 #$ -l h_rt=4:00:00       # Request 12 hours runtime
 #$ -pe omp 32             # Request 32 cores per node
-#$ -t 1-200            # Run 24 parallel jobs
+#$ -t 1-3            # Run 24 parallel jobs
 #$ -o /projectnb/cisi/myousry/comprsense_omics/logs/optimization/measurements_boxplot_simulation.log
 #$ -e /projectnb/cisi/myousry/comprsense_omics/logs/optimization/measurements_boxplot_simulation.err
 
