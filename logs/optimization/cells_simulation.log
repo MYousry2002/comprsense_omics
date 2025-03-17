@@ -23249,3 +23249,1839 @@ Cleanup complete.
 
 Simulation 10/10 score: 0.7315526621398025
 Results saved: output/cells_experiment_repeats.csv
+Running simulation with: num_cells=50000, num_measurements=200, num_modules=40, lda1=8.0, lda2=10.0, sparsity=0.02, gene_set_size=5000
+Running repeat 1/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742164667.h5ad
+Train data shape: (25000, 4971)
+Validation data shape: (12500, 4971)
+Test data shape: (12500, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_2894494_1742164667'
+Loaded dataset: downsampled_5000genes_2894494_1742164667
+Train data shape: (4971, 25000)
+Validation data shape: (4971, 12500)
+Test data shape: (4971, 12500)
+0.28285590873802213 51.86779759753979 1.0 8.0 10.0
+0.1831674158714207 88.39050932061423 1.0 8.0 10.0
+0.18351151351820572 81.51457135871169 1.0 8.0 10.0
+0.18366248149982045 79.95640917355588 1.0 8.0 10.0
+0.18390910392512594 79.29854236054925 1.0 8.0 10.0
+0.18390996370279222 78.81139185667628 1.0 8.0 10.0
+0.1839251822500374 78.30153478191102 1.0 8.0 10.0
+0.1839619309100471 78.09170064080578 1.0 8.0 10.0
+0.1840015355182386 77.91172281197103 1.0 8.0 10.0
+0.18403724068844662 77.83422485260436 1.0 8.0 10.0
+0.18409464804958542 77.80524656531183 1.0 8.0 10.0
+0.18415884338660993 77.7630286162619 1.0 8.0 10.0
+0.18422561714836538 77.74125662799479 1.0 8.0 10.0
+0.18429354262998332 77.6800125397996 1.0 8.0 10.0
+0.18437444607813747 77.63971846672735 1.0 8.0 10.0
+0.18445822890419328 77.5863226542101 1.0 8.0 10.0
+0.18454529132453534 77.5300868360471 1.0 8.0 10.0
+0.18465997549296365 77.45409883284553 1.0 8.0 10.0
+0.18475179544764375 77.40056106585348 1.0 8.0 10.0
+0.18482748674184124 77.35573637277082 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742164667.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742164667_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742164667_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742164667_test_data.npy
+Cleanup complete.
+
+Simulation 1/10 score: 0.7277581626250778
+Running repeat 2/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742165187.h5ad
+Train data shape: (25000, 4971)
+Validation data shape: (12500, 4971)
+Test data shape: (12500, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_2894494_1742165187'
+Loaded dataset: downsampled_5000genes_2894494_1742165187
+Train data shape: (4971, 25000)
+Validation data shape: (4971, 12500)
+Test data shape: (4971, 12500)
+0.2916180579161487 55.84405562564083 1.0 8.0 10.0
+0.18235611230613713 96.66622107211151 1.0 8.0 10.0
+0.18311125306427756 89.33188095164246 1.0 8.0 10.0
+0.18322999556087083 86.60206223714445 1.0 8.0 10.0
+0.1832855188479675 85.17741845012424 1.0 8.0 10.0
+0.18337268411958352 83.85490862926477 1.0 8.0 10.0
+0.18350344195664425 83.344665123865 1.0 8.0 10.0
+0.18357487673069584 83.20518917749527 1.0 8.0 10.0
+0.183626546528318 83.08432353290443 1.0 8.0 10.0
+0.18368014833250368 82.95637609952212 1.0 8.0 10.0
+0.18374565807062782 82.84858324368626 1.0 8.0 10.0
+0.18379543977723856 82.79280726451417 1.0 8.0 10.0
+0.18382607781531835 82.77037732887732 1.0 8.0 10.0
+0.1838503432752282 82.75374486841348 1.0 8.0 10.0
+0.18387328406420955 82.73424367646751 1.0 8.0 10.0
+0.1838902246306663 82.72272053760756 1.0 8.0 10.0
+0.18390859820965333 82.70802310306922 1.0 8.0 10.0
+0.18391535609063636 82.7067485000189 1.0 8.0 10.0
+0.18391647990186943 82.70688147773099 1.0 8.0 10.0
+0.18391684649837725 82.70617046473426 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742165187.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742165187_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742165187_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742165187_test_data.npy
+Cleanup complete.
+
+Simulation 2/10 score: 0.7262032624388077
+Running repeat 3/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742165787.h5ad
+Train data shape: (25000, 4971)
+Validation data shape: (12500, 4971)
+Test data shape: (12500, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_2894494_1742165787'
+Loaded dataset: downsampled_5000genes_2894494_1742165787
+Train data shape: (4971, 25000)
+Validation data shape: (4971, 12500)
+Test data shape: (4971, 12500)
+0.30643104083101746 55.58750960490124 1.0 8.0 10.0
+0.1813220824915166 98.53572532417222 1.0 8.0 10.0
+0.18128054588730125 90.58331769352053 1.0 8.0 10.0
+0.18171316655785374 87.90847431874666 1.0 8.0 10.0
+0.18233450682695274 85.94068602280547 1.0 8.0 10.0
+0.1831702781695359 83.96303517324513 1.0 8.0 10.0
+0.18349930798827996 82.82829920477745 1.0 8.0 10.0
+0.18357134164590783 82.32751630812261 1.0 8.0 10.0
+0.18355711353548498 82.21650767871323 1.0 8.0 10.0
+0.18355714339410134 82.16900330964262 1.0 8.0 10.0
+0.18355400534759614 82.18877531356921 1.0 8.0 10.0
+0.1835422436073647 82.27156885795594 1.0 8.0 10.0
+0.18354528570843143 82.30941757633117 1.0 8.0 10.0
+0.18353812653072643 82.34658914442653 1.0 8.0 10.0
+0.1835298390044502 82.36957702266281 1.0 8.0 10.0
+0.18353222392232127 82.35852748171975 1.0 8.0 10.0
+0.18352797896142814 82.37281004853757 1.0 8.0 10.0
+0.18352942417364804 82.37574653594118 1.0 8.0 10.0
+0.18352276294552716 82.388001248588 1.0 8.0 10.0
+0.18352130754257456 82.3912787241796 1.0 8.0 10.0
+U dimensions = (4971, 39)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742165787.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742165787_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742165787_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742165787_test_data.npy
+Cleanup complete.
+
+Simulation 3/10 score: 0.7227076923795167
+Running repeat 4/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742166294.h5ad
+Train data shape: (25000, 4971)
+Validation data shape: (12500, 4971)
+Test data shape: (12500, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_2894494_1742166294'
+Loaded dataset: downsampled_5000genes_2894494_1742166294
+Train data shape: (4971, 25000)
+Validation data shape: (4971, 12500)
+Test data shape: (4971, 12500)
+0.3006000366792604 55.799438096509675 1.0 8.0 10.0
+0.1816297507982242 97.52474069928543 1.0 8.0 10.0
+0.18124552920340964 87.93204520219751 1.0 8.0 10.0
+0.18106385676007908 85.11190576831333 1.0 8.0 10.0
+0.18150083199701061 83.0985232741815 1.0 8.0 10.0
+0.18194348597722665 82.09328131693864 1.0 8.0 10.0
+0.1823313575630633 81.5558251203668 1.0 8.0 10.0
+0.18273730122265852 81.12488366428164 1.0 8.0 10.0
+0.18307946438298317 80.82525465850581 1.0 8.0 10.0
+0.18332754359508807 80.51495573482666 1.0 8.0 10.0
+0.183450528834593 80.41100820051395 1.0 8.0 10.0
+0.1835247710263137 80.33429267050792 1.0 8.0 10.0
+0.18356971108926834 80.27469503104257 1.0 8.0 10.0
+0.1836078586353812 80.23381059197236 1.0 8.0 10.0
+0.18363375337014298 80.19996162780367 1.0 8.0 10.0
+0.18366494731515992 80.15294599778159 1.0 8.0 10.0
+0.1836997338255859 80.10030049697117 1.0 8.0 10.0
+0.18374553637331725 80.02424223526766 1.0 8.0 10.0
+0.18376917931511116 79.96094402883958 1.0 8.0 10.0
+0.18377231864290178 79.89428064080548 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742166294.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742166294_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742166294_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742166294_test_data.npy
+Cleanup complete.
+
+Simulation 4/10 score: 0.724988686701014
+Running repeat 5/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742166750.h5ad
+Train data shape: (25000, 4971)
+Validation data shape: (12500, 4971)
+Test data shape: (12500, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_2894494_1742166750'
+Loaded dataset: downsampled_5000genes_2894494_1742166750
+Train data shape: (4971, 25000)
+Validation data shape: (4971, 12500)
+Test data shape: (4971, 12500)
+0.28689612028256395 56.32794025432971 1.0 8.0 10.0
+0.18336533878067618 96.43774546949032 1.0 8.0 10.0
+0.18339616438327 87.5712052091823 1.0 8.0 10.0
+0.18425967902519647 83.27883909061813 1.0 8.0 10.0
+0.18453737944562298 81.72943658868255 1.0 8.0 10.0
+0.18458340266709272 81.2043186825705 1.0 8.0 10.0
+0.18454970666348613 80.9643532018473 1.0 8.0 10.0
+0.18453982988759665 80.89735145302684 1.0 8.0 10.0
+0.18452055364763342 80.84563505959997 1.0 8.0 10.0
+0.18444390018715429 80.78153981854999 1.0 8.0 10.0
+0.1843427083952206 80.5444738106199 1.0 8.0 10.0
+0.18431812546998805 80.38018421982828 1.0 8.0 10.0
+0.1843490579691518 80.1790636165529 1.0 8.0 10.0
+0.1843820743293072 80.08832955436885 1.0 8.0 10.0
+0.18438837112283668 80.06976792556144 1.0 8.0 10.0
+0.1843916467319916 80.00040224443062 1.0 8.0 10.0
+0.1843993970569472 80.05289753714342 1.0 8.0 10.0
+0.18439830512133726 80.05068073462942 1.0 8.0 10.0
+0.18439745133482344 80.05059482940644 1.0 8.0 10.0
+0.1843976593222858 80.04853855196839 1.0 8.0 10.0
+U dimensions = (4971, 39)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742166750.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742166750_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742166750_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742166750_test_data.npy
+Cleanup complete.
+
+Simulation 5/10 score: 0.7248595920082854
+Running repeat 6/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742167233.h5ad
+Train data shape: (25000, 4971)
+Validation data shape: (12500, 4971)
+Test data shape: (12500, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_2894494_1742167233'
+Loaded dataset: downsampled_5000genes_2894494_1742167233
+Train data shape: (4971, 25000)
+Validation data shape: (4971, 12500)
+Test data shape: (4971, 12500)
+0.29004757135553216 56.90020957562515 1.0 8.0 10.0
+0.18226739116260504 98.64552409178688 1.0 8.0 10.0
+0.18258439746560295 88.90812228229092 1.0 8.0 10.0
+0.18332783806149555 85.2443718351548 1.0 8.0 10.0
+0.18368558050145256 83.99993819063812 1.0 8.0 10.0
+0.18379366406508124 82.51427815317477 1.0 8.0 10.0
+0.1838598658563494 81.39694126104307 1.0 8.0 10.0
+0.18409760857985225 80.87880596525625 1.0 8.0 10.0
+0.18440952955726952 80.48377467986501 1.0 8.0 10.0
+0.18468195866969672 79.9952393986116 1.0 8.0 10.0
+0.18489673512170823 79.65744384103452 1.0 8.0 10.0
+0.18503118018511122 79.48979938641642 1.0 8.0 10.0
+0.18510371935058 79.39220626928959 1.0 8.0 10.0
+0.18514297599208507 79.31544842113165 1.0 8.0 10.0
+0.18513750747542712 79.2724790829938 1.0 8.0 10.0
+0.18513457520009768 79.24443272142624 1.0 8.0 10.0
+0.18514507285539517 79.25075666948376 1.0 8.0 10.0
+0.18515453488285838 79.26478052852642 1.0 8.0 10.0
+0.18515192765553024 79.29386962717484 1.0 8.0 10.0
+0.18514926975413704 79.30503370622584 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742167233.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742167233_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742167233_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742167233_test_data.npy
+Cleanup complete.
+
+Simulation 6/10 score: 0.7268271641809853
+Running repeat 7/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742167688.h5ad
+Train data shape: (25000, 4971)
+Validation data shape: (12500, 4971)
+Test data shape: (12500, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_2894494_1742167688'
+Loaded dataset: downsampled_5000genes_2894494_1742167688
+Train data shape: (4971, 25000)
+Validation data shape: (4971, 12500)
+Test data shape: (4971, 12500)
+0.29608808698344835 53.02729986786873 1.0 8.0 10.0
+0.18267582081044142 97.25127983352827 1.0 8.0 10.0
+0.18225347909967782 89.1639723099045 1.0 8.0 10.0
+0.18229662057455076 86.7928134192335 1.0 8.0 10.0
+0.18241580270660307 85.29923383916912 1.0 8.0 10.0
+0.18236877761432913 84.2788606811101 1.0 8.0 10.0
+0.182375567838563 83.75375131482342 1.0 8.0 10.0
+0.18248547444476637 83.08404360373346 1.0 8.0 10.0
+0.18260331479382264 82.4450578670151 1.0 8.0 10.0
+0.18265528981480283 82.26208961728273 1.0 8.0 10.0
+0.18268257584341518 82.26357760897334 1.0 8.0 10.0
+0.182695615731584 82.26859688314846 1.0 8.0 10.0
+0.18267483714285537 82.2703454989244 1.0 8.0 10.0
+0.18261010578748882 82.34338336982474 1.0 8.0 10.0
+0.18258182018833102 82.4484348090052 1.0 8.0 10.0
+0.18257038587663899 82.4224231804074 1.0 8.0 10.0
+0.18257883860202961 82.45364526460561 1.0 8.0 10.0
+0.1825988723669454 82.43863047099956 1.0 8.0 10.0
+0.1826087842688715 82.42728217403324 1.0 8.0 10.0
+0.1826100192284441 82.43045236819142 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742167688.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742167688_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742167688_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742167688_test_data.npy
+Cleanup complete.
+
+Simulation 7/10 score: 0.7226101920557916
+Running repeat 8/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742168153.h5ad
+Train data shape: (25000, 4971)
+Validation data shape: (12500, 4971)
+Test data shape: (12500, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_2894494_1742168153'
+Loaded dataset: downsampled_5000genes_2894494_1742168153
+Train data shape: (4971, 25000)
+Validation data shape: (4971, 12500)
+Test data shape: (4971, 12500)
+0.27798950314814375 56.98820292290541 1.0 8.0 10.0
+0.18408106390263157 95.70995835414901 1.0 8.0 10.0
+0.1848559831171822 88.58265394817826 1.0 8.0 10.0
+0.18583231990625115 85.60806228427634 1.0 8.0 10.0
+0.18621137715778402 84.11910478600865 1.0 8.0 10.0
+0.1860337651728443 82.98625117833716 1.0 8.0 10.0
+0.18579552167944335 82.22686995575842 1.0 8.0 10.0
+0.18590498700915448 81.73146997415326 1.0 8.0 10.0
+0.18599279091806853 81.51638438374718 1.0 8.0 10.0
+0.18605252459372146 81.89739262708227 1.0 8.0 10.0
+0.18616648423047788 81.83635356995269 1.0 8.0 10.0
+0.1862506410512894 81.83457865293511 1.0 8.0 10.0
+0.18633912204881098 81.76970115512285 1.0 8.0 10.0
+0.18643256937911212 81.67619045501606 1.0 8.0 10.0
+0.18649600338077266 81.60542400341454 1.0 8.0 10.0
+0.18654316740241572 81.56593539292035 1.0 8.0 10.0
+0.18659062167145646 81.51676170652362 1.0 8.0 10.0
+0.18663325705452183 81.47350966105846 1.0 8.0 10.0
+0.1866666197054384 81.45217511421681 1.0 8.0 10.0
+0.18669908023661974 81.42326129366225 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742168153.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742168153_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742168153_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742168153_test_data.npy
+Cleanup complete.
+
+Simulation 8/10 score: 0.724583659620867
+Running repeat 9/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742168607.h5ad
+Train data shape: (25000, 4971)
+Validation data shape: (12500, 4971)
+Test data shape: (12500, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_2894494_1742168607'
+Loaded dataset: downsampled_5000genes_2894494_1742168607
+Train data shape: (4971, 25000)
+Validation data shape: (4971, 12500)
+Test data shape: (4971, 12500)
+0.28280843904016006 52.75577564248815 1.0 8.0 10.0
+0.1857221667408877 90.5548801451132 1.0 8.0 10.0
+0.18587006796303296 85.37671982271522 1.0 8.0 10.0
+0.18602760632507176 82.58930265551602 1.0 8.0 10.0
+0.18585291007893923 81.50382774610762 1.0 8.0 10.0
+0.18609009910905516 80.33574240199975 1.0 8.0 10.0
+0.18628947400307305 79.00779568581048 1.0 8.0 10.0
+0.186348188579333 78.58127398769622 1.0 8.0 10.0
+0.1863832681996871 78.46246926187686 1.0 8.0 10.0
+0.18638405511690448 78.37018884592447 1.0 8.0 10.0
+0.1863708886381048 78.29234464510299 1.0 8.0 10.0
+0.18636114275298898 78.13456409960467 1.0 8.0 10.0
+0.1863424131367747 78.02418720409167 1.0 8.0 10.0
+0.18631559489678495 78.06497122401802 1.0 8.0 10.0
+0.18628636898834683 78.14723807899956 1.0 8.0 10.0
+0.1862505520914144 78.19726352408432 1.0 8.0 10.0
+0.18619952141381335 78.2616050963698 1.0 8.0 10.0
+0.18615457701374516 78.28739516551586 1.0 8.0 10.0
+0.1861185933821049 78.3098603634157 1.0 8.0 10.0
+0.1860930919795578 78.33002017255437 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742168607.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742168607_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742168607_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742168607_test_data.npy
+Cleanup complete.
+
+Simulation 9/10 score: 0.7255655910306252
+Running repeat 10/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742169047.h5ad
+Train data shape: (25000, 4971)
+Validation data shape: (12500, 4971)
+Test data shape: (12500, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_2894494_1742169047'
+Loaded dataset: downsampled_5000genes_2894494_1742169047
+Train data shape: (4971, 25000)
+Validation data shape: (4971, 12500)
+Test data shape: (4971, 12500)
+0.28592224421482515 54.50202760104658 1.0 8.0 10.0
+0.18246845733063088 89.68096443224576 1.0 8.0 10.0
+0.1827287155196462 84.44008713605055 1.0 8.0 10.0
+0.1829538923332119 82.5475055041685 1.0 8.0 10.0
+0.1830028667693685 81.82984163917533 1.0 8.0 10.0
+0.1829930097144088 81.78603367988077 1.0 8.0 10.0
+0.1830013186037429 81.7940696764045 1.0 8.0 10.0
+0.18303518085579384 81.72673062674355 1.0 8.0 10.0
+0.18309029370550667 81.70918143746994 1.0 8.0 10.0
+0.18314835292259002 81.61667957457989 1.0 8.0 10.0
+0.1832003091875154 81.5317062536809 1.0 8.0 10.0
+0.18330641971747574 81.353335084281 1.0 8.0 10.0
+0.1833771210830084 81.28529490042669 1.0 8.0 10.0
+0.18349153262940654 81.11595134739927 1.0 8.0 10.0
+0.18358388837026396 80.98133126215194 1.0 8.0 10.0
+0.18367868600394388 80.85279117070652 1.0 8.0 10.0
+0.18380205378612946 80.68977105647224 1.0 8.0 10.0
+0.18392635914069488 80.58381415910975 1.0 8.0 10.0
+0.18407633573037874 80.43572961198458 1.0 8.0 10.0
+0.18424523589087494 80.21511891871714 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742169047.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742169047_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742169047_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_2894494_1742169047_test_data.npy
+Cleanup complete.
+
+Simulation 10/10 score: 0.7239698075671765
+Results saved: output/cells_experiment_repeats.csv
+Running simulation with: num_cells=75000, num_measurements=200, num_modules=40, lda1=8.0, lda2=10.0, sparsity=0.02, gene_set_size=5000
+Running repeat 1/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742164667.h5ad
+Train data shape: (37500, 4971)
+Validation data shape: (18750, 4971)
+Test data shape: (18750, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_1219741_1742164667'
+Loaded dataset: downsampled_5000genes_1219741_1742164667
+Train data shape: (4971, 37500)
+Validation data shape: (4971, 18750)
+Test data shape: (4971, 18750)
+0.2803546256284204 69.07555967373511 1.0 8.0 10.0
+0.16842936240033435 124.50643938860117 1.0 8.0 10.0
+0.16795883703311731 119.0884494930848 1.0 8.0 10.0
+0.1676823185182249 117.46861628425283 1.0 8.0 10.0
+0.16726060994236425 115.94592491040498 1.0 8.0 10.0
+0.16692497507776727 115.87183512235993 1.0 8.0 10.0
+0.16665663881255321 115.71307639959676 1.0 8.0 10.0
+0.16645641485440876 115.58947759967882 1.0 8.0 10.0
+0.16630479550946453 115.69547980121331 1.0 8.0 10.0
+0.1662011316134624 115.84299656983546 1.0 8.0 10.0
+0.1660574911905489 115.55644610497907 1.0 8.0 10.0
+0.16602826990166974 115.22026868116805 1.0 8.0 10.0
+0.16601335706569664 115.17747867378439 1.0 8.0 10.0
+0.16600986782961635 115.10225045201453 1.0 8.0 10.0
+0.1660037070882261 115.0291264783491 1.0 8.0 10.0
+0.16599081336791177 115.03683687533449 1.0 8.0 10.0
+0.16599126733031355 115.02896711383582 1.0 8.0 10.0
+0.16598831260069857 115.0127038891143 1.0 8.0 10.0
+0.16598865170060662 115.0187812650436 1.0 8.0 10.0
+0.1659848580169192 114.96333220736688 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742164667.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742164667_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742164667_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742164667_test_data.npy
+Cleanup complete.
+
+Simulation 1/10 score: 0.7173770943514554
+Running repeat 2/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742165405.h5ad
+Train data shape: (37500, 4971)
+Validation data shape: (18750, 4971)
+Test data shape: (18750, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_1219741_1742165405'
+Loaded dataset: downsampled_5000genes_1219741_1742165405
+Train data shape: (4971, 37500)
+Validation data shape: (4971, 18750)
+Test data shape: (4971, 18750)
+0.2701728086523826 76.67585029145815 1.0 8.0 10.0
+0.16436658945325144 129.03436246085548 1.0 8.0 10.0
+0.16346414953136745 123.24564674744519 1.0 8.0 10.0
+0.16321753694717944 121.88545055714187 1.0 8.0 10.0
+0.16316526604105597 121.02448193753851 1.0 8.0 10.0
+0.1632591081905893 120.69763327237642 1.0 8.0 10.0
+0.16346131508711725 120.19963386402307 1.0 8.0 10.0
+0.1636990823120832 119.64380056914452 1.0 8.0 10.0
+0.16389271752492507 119.19721311384808 1.0 8.0 10.0
+0.16407161835873663 118.67834999906006 1.0 8.0 10.0
+0.16421806347821055 118.29593775870458 1.0 8.0 10.0
+0.16429962604405746 117.97567050699396 1.0 8.0 10.0
+0.16435746787188088 117.71706338550257 1.0 8.0 10.0
+0.16441770237204933 117.63249355914009 1.0 8.0 10.0
+0.16447951343389633 117.54152642490646 1.0 8.0 10.0
+0.16452434622425371 117.46037102323146 1.0 8.0 10.0
+0.16457095013349288 117.32670450299013 1.0 8.0 10.0
+0.16460922515781595 117.1931921114566 1.0 8.0 10.0
+0.16465159659389994 117.07302550139912 1.0 8.0 10.0
+0.1646622713662097 117.09571696562803 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742165405.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742165405_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742165405_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742165405_test_data.npy
+Cleanup complete.
+
+Simulation 2/10 score: 0.7195968320552398
+Running repeat 3/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742166145.h5ad
+Train data shape: (37500, 4971)
+Validation data shape: (18750, 4971)
+Test data shape: (18750, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_1219741_1742166145'
+Loaded dataset: downsampled_5000genes_1219741_1742166145
+Train data shape: (4971, 37500)
+Validation data shape: (4971, 18750)
+Test data shape: (4971, 18750)
+0.2670060521267925 76.82745507494624 1.0 8.0 10.0
+0.1671115799317292 132.10760187686031 1.0 8.0 10.0
+0.16589940547404158 125.86862693943229 1.0 8.0 10.0
+0.16554043393329632 123.62137628042728 1.0 8.0 10.0
+0.1653629397225035 122.1242959828769 1.0 8.0 10.0
+0.16524847466355475 121.28605069062345 1.0 8.0 10.0
+0.16509934198809395 120.26548237407874 1.0 8.0 10.0
+0.16504254482789715 119.94674702720204 1.0 8.0 10.0
+0.1651105675318837 119.57178229352402 1.0 8.0 10.0
+0.16523266006689197 119.2417703458661 1.0 8.0 10.0
+0.16543723230695362 118.9713479813311 1.0 8.0 10.0
+0.16564226814937622 118.70777970844293 1.0 8.0 10.0
+0.16580117918548298 118.45981686785053 1.0 8.0 10.0
+0.16589029512493703 118.31481178547543 1.0 8.0 10.0
+0.16594654016384958 118.24696725327931 1.0 8.0 10.0
+0.16595961555368077 118.30001568737107 1.0 8.0 10.0
+0.16594928804288067 118.39291010246583 1.0 8.0 10.0
+0.16584573014533666 118.48794505280507 1.0 8.0 10.0
+0.16570608141428245 118.72254738316569 1.0 8.0 10.0
+0.16557736445620475 118.87649206388046 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742166145.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742166145_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742166145_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742166145_test_data.npy
+Cleanup complete.
+
+Simulation 3/10 score: 0.7229667149648927
+Running repeat 4/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742166952.h5ad
+Train data shape: (37500, 4971)
+Validation data shape: (18750, 4971)
+Test data shape: (18750, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_1219741_1742166952'
+Loaded dataset: downsampled_5000genes_1219741_1742166952
+Train data shape: (4971, 37500)
+Validation data shape: (4971, 18750)
+Test data shape: (4971, 18750)
+0.26186547989510256 75.7509497599079 1.0 8.0 10.0
+0.16594969830445183 130.20936793626973 1.0 8.0 10.0
+0.16452284019699415 125.35604208063735 1.0 8.0 10.0
+0.16379527443735742 123.04202047057099 1.0 8.0 10.0
+0.1635095524096306 121.06246038066729 1.0 8.0 10.0
+0.1636711238890366 120.11891454060398 1.0 8.0 10.0
+0.16398733635882634 119.28336349950182 1.0 8.0 10.0
+0.1641987828520045 118.73503297781922 1.0 8.0 10.0
+0.16432838794123672 118.46116489974634 1.0 8.0 10.0
+0.16439737163791168 118.36104908797907 1.0 8.0 10.0
+0.16442064962786918 118.28849667092838 1.0 8.0 10.0
+0.16439826479030029 118.28598011226799 1.0 8.0 10.0
+0.1643690968239474 118.31045080918179 1.0 8.0 10.0
+0.16434980551365952 118.32424598825166 1.0 8.0 10.0
+0.1643382903546523 118.31921572536672 1.0 8.0 10.0
+0.1643317228154344 118.32004799241899 1.0 8.0 10.0
+0.1643470074076332 118.2386682419436 1.0 8.0 10.0
+0.16434274338930022 118.17367340310875 1.0 8.0 10.0
+0.16433362719936795 118.16879688112923 1.0 8.0 10.0
+0.16432145074763338 118.16400071456869 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742166952.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742166952_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742166952_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742166952_test_data.npy
+Cleanup complete.
+
+Simulation 4/10 score: 0.7232916828310005
+Running repeat 5/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742167639.h5ad
+Train data shape: (37500, 4971)
+Validation data shape: (18750, 4971)
+Test data shape: (18750, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_1219741_1742167639'
+Loaded dataset: downsampled_5000genes_1219741_1742167639
+Train data shape: (4971, 37500)
+Validation data shape: (4971, 18750)
+Test data shape: (4971, 18750)
+0.27109123235002175 75.90544070383548 1.0 8.0 10.0
+0.16616834322262286 134.95947361555602 1.0 8.0 10.0
+0.1653503209461784 128.5126663216256 1.0 8.0 10.0
+0.16543420775682205 125.98327859065257 1.0 8.0 10.0
+0.1655940357931096 124.65623106962657 1.0 8.0 10.0
+0.1657847814196255 123.42334040034598 1.0 8.0 10.0
+0.16596871260556234 122.79664195804885 1.0 8.0 10.0
+0.1660878808457933 122.15485694344443 1.0 8.0 10.0
+0.16617839286698144 121.21959170912388 1.0 8.0 10.0
+0.16614331220709355 120.49428791784399 1.0 8.0 10.0
+0.1660097244363964 119.51454201741782 1.0 8.0 10.0
+0.1659837262270355 119.33009007356092 1.0 8.0 10.0
+0.16597825282318723 119.40485375667188 1.0 8.0 10.0
+0.16598263156528836 119.37535954342108 1.0 8.0 10.0
+0.16598156313988455 119.35697226898783 1.0 8.0 10.0
+0.16599845871222307 119.31969414528342 1.0 8.0 10.0
+0.1659995175439355 119.3090696771339 1.0 8.0 10.0
+0.16600522782283733 119.27001247074384 1.0 8.0 10.0
+0.16600990421052542 119.26222069673199 1.0 8.0 10.0
+0.16601218919316607 119.25705130440042 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742167639.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742167639_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742167639_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742167639_test_data.npy
+Cleanup complete.
+
+Simulation 5/10 score: 0.7152616302624597
+Running repeat 6/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742168325.h5ad
+Train data shape: (37500, 4971)
+Validation data shape: (18750, 4971)
+Test data shape: (18750, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_1219741_1742168325'
+Loaded dataset: downsampled_5000genes_1219741_1742168325
+Train data shape: (4971, 37500)
+Validation data shape: (4971, 18750)
+Test data shape: (4971, 18750)
+0.269766273234454 74.65945976668759 1.0 8.0 10.0
+0.16952299477887367 130.07139616377708 1.0 8.0 10.0
+0.1678806582496174 125.18516883165663 1.0 8.0 10.0
+0.16769468514627828 120.76788215179018 1.0 8.0 10.0
+0.1671591090106862 118.72545866581879 1.0 8.0 10.0
+0.16659399620889703 117.79967203808208 1.0 8.0 10.0
+0.16625082521769508 117.69472750667697 1.0 8.0 10.0
+0.16595941728513297 117.77273888797436 1.0 8.0 10.0
+0.1657216323639541 117.94955158980618 1.0 8.0 10.0
+0.16556877203089648 118.08831018256288 1.0 8.0 10.0
+0.16545581815982224 118.22928308731957 1.0 8.0 10.0
+0.16539982652706553 118.23059339771581 1.0 8.0 10.0
+0.16535701928772928 118.27006040595377 1.0 8.0 10.0
+0.16532076347871638 118.3031780126413 1.0 8.0 10.0
+0.16528553223600528 118.33127733818378 1.0 8.0 10.0
+0.16525452856754652 118.35045427557733 1.0 8.0 10.0
+0.16523120864718288 118.36199481885421 1.0 8.0 10.0
+0.16521094058073016 118.3570042760708 1.0 8.0 10.0
+0.16519232728942002 118.34353575886423 1.0 8.0 10.0
+0.16517215799192309 118.32265709305497 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742168325.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742168325_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742168325_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742168325_test_data.npy
+Cleanup complete.
+
+Simulation 6/10 score: 0.7187252623605298
+Running repeat 7/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742168991.h5ad
+Train data shape: (37500, 4971)
+Validation data shape: (18750, 4971)
+Test data shape: (18750, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_1219741_1742168991'
+Loaded dataset: downsampled_5000genes_1219741_1742168991
+Train data shape: (4971, 37500)
+Validation data shape: (4971, 18750)
+Test data shape: (4971, 18750)
+0.272668881483329 73.27184250213156 1.0 8.0 10.0
+0.1680031644148995 130.94241939061504 1.0 8.0 10.0
+0.16593902017437723 125.1975502307628 1.0 8.0 10.0
+0.16540527245141867 122.24446010391678 1.0 8.0 10.0
+0.1650679864676049 121.20464435842973 1.0 8.0 10.0
+0.16488861174144376 120.70394246264568 1.0 8.0 10.0
+0.1648410519288963 120.35462709727445 1.0 8.0 10.0
+0.16479708619881683 120.03054305038518 1.0 8.0 10.0
+0.16475662871078245 119.70650085235339 1.0 8.0 10.0
+0.16473857688968674 119.44283955193168 1.0 8.0 10.0
+0.16472877691000354 119.23461803325488 1.0 8.0 10.0
+0.16473377240714648 118.94515110561943 1.0 8.0 10.0
+0.16474767717954064 118.8397170329802 1.0 8.0 10.0
+0.1647660971848548 118.73061669751542 1.0 8.0 10.0
+0.16479353607963243 118.63064762730191 1.0 8.0 10.0
+0.16482632044884105 118.47122963417989 1.0 8.0 10.0
+0.1648380291076652 118.37110113231729 1.0 8.0 10.0
+0.16485239453422362 118.29155270067785 1.0 8.0 10.0
+0.164857682180634 118.22557536948489 1.0 8.0 10.0
+0.16484438135989266 118.184905021853 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742168991.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742168991_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742168991_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742168991_test_data.npy
+Cleanup complete.
+
+Simulation 7/10 score: 0.7168120994282831
+Running repeat 8/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742169758.h5ad
+Train data shape: (37500, 4971)
+Validation data shape: (18750, 4971)
+Test data shape: (18750, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_1219741_1742169758'
+Loaded dataset: downsampled_5000genes_1219741_1742169758
+Train data shape: (4971, 37500)
+Validation data shape: (4971, 18750)
+Test data shape: (4971, 18750)
+0.2563319216068103 73.46371870921197 1.0 8.0 10.0
+0.1686142565760329 126.94803175243764 1.0 8.0 10.0
+0.166564929578222 123.83221841664064 1.0 8.0 10.0
+0.1657747888614074 122.3887838287604 1.0 8.0 10.0
+0.16476134541370357 121.78192307529878 1.0 8.0 10.0
+0.1643324731776834 121.1476475988904 1.0 8.0 10.0
+0.16416882846819136 120.92877363602634 1.0 8.0 10.0
+0.1641016353749637 120.73531686082413 1.0 8.0 10.0
+0.16405841986847491 120.32145411887777 1.0 8.0 10.0
+0.1640421687561403 119.90009390999039 1.0 8.0 10.0
+0.16403069908074008 119.5557214155372 1.0 8.0 10.0
+0.1640131076986957 119.32256482139421 1.0 8.0 10.0
+0.16400150542314307 118.99353520122 1.0 8.0 10.0
+0.16398180493914882 118.8515410820102 1.0 8.0 10.0
+0.16398562507438152 118.70315040207136 1.0 8.0 10.0
+0.16401015400756191 118.56310937243275 1.0 8.0 10.0
+0.16405854901269357 118.39352326741525 1.0 8.0 10.0
+0.16409414654766474 118.28219876186283 1.0 8.0 10.0
+0.16412943823659887 118.20361691019852 1.0 8.0 10.0
+0.16416623844334022 118.14888703448749 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742169758.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742169758_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742169758_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742169758_test_data.npy
+Cleanup complete.
+
+Simulation 8/10 score: 0.7223343418845272
+Running repeat 9/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742170572.h5ad
+Train data shape: (37500, 4971)
+Validation data shape: (18750, 4971)
+Test data shape: (18750, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_1219741_1742170572'
+Loaded dataset: downsampled_5000genes_1219741_1742170572
+Train data shape: (4971, 37500)
+Validation data shape: (4971, 18750)
+Test data shape: (4971, 18750)
+0.2762487831485769 75.59401764589737 1.0 8.0 10.0
+0.16747667030895486 133.70018319324186 1.0 8.0 10.0
+0.1658885988746388 127.9683895849427 1.0 8.0 10.0
+0.16573537599947263 124.86528432461478 1.0 8.0 10.0
+0.16564810632617433 123.73320525415257 1.0 8.0 10.0
+0.16549853255805824 122.87757635745945 1.0 8.0 10.0
+0.165386910498991 122.58065051867095 1.0 8.0 10.0
+0.16534835662324987 122.22615409681394 1.0 8.0 10.0
+0.16539596029207826 121.8109835244055 1.0 8.0 10.0
+0.16545143410678864 121.48364200740649 1.0 8.0 10.0
+0.1654827624099271 121.32727592683351 1.0 8.0 10.0
+0.16542150449351678 121.08800011629025 1.0 8.0 10.0
+0.16540136218711554 120.74276950026928 1.0 8.0 10.0
+0.16543460784779407 120.4924352052348 1.0 8.0 10.0
+0.1654775846219677 120.31001194427456 1.0 8.0 10.0
+0.16550754082164254 120.14228540075676 1.0 8.0 10.0
+0.1655301437053046 120.01149621112515 1.0 8.0 10.0
+0.16553016945123156 119.9178422067131 1.0 8.0 10.0
+0.1655306007326418 119.84430372696391 1.0 8.0 10.0
+0.16552645697155055 119.74127679269338 1.0 8.0 10.0
+U dimensions = (4971, 39)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742170572.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742170572_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742170572_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742170572_test_data.npy
+Cleanup complete.
+
+Simulation 9/10 score: 0.7231255901008379
+Running repeat 10/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742171275.h5ad
+Train data shape: (37500, 4971)
+Validation data shape: (18750, 4971)
+Test data shape: (18750, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_1219741_1742171275'
+Loaded dataset: downsampled_5000genes_1219741_1742171275
+Train data shape: (4971, 37500)
+Validation data shape: (4971, 18750)
+Test data shape: (4971, 18750)
+0.27389732780676423 74.04152502082579 1.0 8.0 10.0
+0.1672511994912993 132.15109128597015 1.0 8.0 10.0
+0.16566073999393982 128.19548947295488 1.0 8.0 10.0
+0.16533209490947454 125.60656380722162 1.0 8.0 10.0
+0.16525654169194726 123.60422533837232 1.0 8.0 10.0
+0.16528654990231217 122.40025485465382 1.0 8.0 10.0
+0.16525443903895354 122.0285634029037 1.0 8.0 10.0
+0.16518317847674235 121.8987860178102 1.0 8.0 10.0
+0.16514317438727677 121.63465037422255 1.0 8.0 10.0
+0.16514878941927924 121.44220475875912 1.0 8.0 10.0
+0.1651475606424857 121.43570984229987 1.0 8.0 10.0
+0.16515309895734553 121.31458687313379 1.0 8.0 10.0
+0.1651530778134751 121.26430169542968 1.0 8.0 10.0
+0.1651878096563537 121.19941917096267 1.0 8.0 10.0
+0.1651965989527594 121.1811651804745 1.0 8.0 10.0
+0.16517497378433788 121.14881680090801 1.0 8.0 10.0
+0.16518256004403087 121.05726686044477 1.0 8.0 10.0
+0.1652058085635334 120.934903527312 1.0 8.0 10.0
+0.16522281714610454 120.90584056351709 1.0 8.0 10.0
+0.1652229670862011 120.86112032501515 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742171275.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742171275_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742171275_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_1219741_1742171275_test_data.npy
+Cleanup complete.
+
+Simulation 10/10 score: 0.7240245804388706
+Results saved: output/cells_experiment_repeats.csv
+Running simulation with: num_cells=100000, num_measurements=200, num_modules=40, lda1=8.0, lda2=10.0, sparsity=0.02, gene_set_size=5000
+Running repeat 1/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742164716.h5ad
+Train data shape: (50000, 4971)
+Validation data shape: (25000, 4971)
+Test data shape: (25000, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_714779_1742164716'
+Loaded dataset: downsampled_5000genes_714779_1742164716
+Train data shape: (4971, 50000)
+Validation data shape: (4971, 25000)
+Test data shape: (4971, 25000)
+0.2528071778842753 99.8982512146954 1.0 8.0 10.0
+0.15615579577144378 167.36729465464703 1.0 8.0 10.0
+0.15504283085038661 163.58933820282635 1.0 8.0 10.0
+0.15457978036295028 161.55609778328687 1.0 8.0 10.0
+0.1539831190226011 160.71487815634995 1.0 8.0 10.0
+0.1531191232810879 160.37818528678434 1.0 8.0 10.0
+0.15279071079006956 159.97253392880484 1.0 8.0 10.0
+0.1527004587683266 159.76670381586726 1.0 8.0 10.0
+0.15263412724316616 159.69796762551 1.0 8.0 10.0
+0.15259028416056564 159.63200352698303 1.0 8.0 10.0
+0.15256844518410106 159.45838627478946 1.0 8.0 10.0
+0.15256832858002367 159.3126411073028 1.0 8.0 10.0
+0.15257723546380308 159.20152396166952 1.0 8.0 10.0
+0.152592971831373 159.06182069385932 1.0 8.0 10.0
+0.15259868718656244 158.8583059851644 1.0 8.0 10.0
+0.15258862657917382 158.82541837285655 1.0 8.0 10.0
+0.15257500164554894 158.7155344752739 1.0 8.0 10.0
+0.1525572875158302 158.7499129643732 1.0 8.0 10.0
+0.15250411766221528 158.83844274282296 1.0 8.0 10.0
+0.15246476510354046 158.85489922657365 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742164716.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742164716_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742164716_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742164716_test_data.npy
+Cleanup complete.
+
+Simulation 1/10 score: 0.7178989112063379
+Running repeat 2/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742165818.h5ad
+Train data shape: (50000, 4971)
+Validation data shape: (25000, 4971)
+Test data shape: (25000, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_714779_1742165818'
+Loaded dataset: downsampled_5000genes_714779_1742165818
+Train data shape: (4971, 50000)
+Validation data shape: (4971, 25000)
+Test data shape: (4971, 25000)
+0.2590836435099123 97.458315102748 1.0 8.0 10.0
+0.1537965137007179 169.41451264008143 1.0 8.0 10.0
+0.15323398945130673 164.2357921920675 1.0 8.0 10.0
+0.15289469944836132 161.69235061585363 1.0 8.0 10.0
+0.1525629194916437 159.95803969947897 1.0 8.0 10.0
+0.15237825240892533 159.23609615195863 1.0 8.0 10.0
+0.15225490896346072 158.48915709516262 1.0 8.0 10.0
+0.15218066207024472 157.9575053550943 1.0 8.0 10.0
+0.15214611642049714 157.63267094655927 1.0 8.0 10.0
+0.15213659844873806 157.43261639749295 1.0 8.0 10.0
+0.1521254896799641 157.2592482461231 1.0 8.0 10.0
+0.1521049675567131 157.21065002283564 1.0 8.0 10.0
+0.15207670230617332 157.20256941765996 1.0 8.0 10.0
+0.1520604424443448 157.23546531022504 1.0 8.0 10.0
+0.152052321325855 157.22869687108337 1.0 8.0 10.0
+0.1520574550607504 157.17353690209404 1.0 8.0 10.0
+0.1520602131185309 157.15372637699787 1.0 8.0 10.0
+0.15205527701923083 157.17434103763523 1.0 8.0 10.0
+0.1520611148431188 157.1568478508898 1.0 8.0 10.0
+0.15206532790023874 157.1684228372576 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742165818.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742165818_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742165818_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742165818_test_data.npy
+Cleanup complete.
+
+Simulation 2/10 score: 0.7147658033128187
+Running repeat 3/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742166718.h5ad
+Train data shape: (50000, 4971)
+Validation data shape: (25000, 4971)
+Test data shape: (25000, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_714779_1742166718'
+Loaded dataset: downsampled_5000genes_714779_1742166718
+Train data shape: (4971, 50000)
+Validation data shape: (4971, 25000)
+Test data shape: (4971, 25000)
+0.2649820336677021 99.59271246785468 1.0 8.0 10.0
+0.15546030280365675 169.98474848133554 1.0 8.0 10.0
+0.1541598253344162 163.7814407593076 1.0 8.0 10.0
+0.15411845893464904 160.78527235443843 1.0 8.0 10.0
+0.153901882109293 158.44638941569104 1.0 8.0 10.0
+0.15390807161114683 157.6371865212624 1.0 8.0 10.0
+0.15389025755421848 157.33983378379708 1.0 8.0 10.0
+0.15389369018584498 157.34247767548237 1.0 8.0 10.0
+0.1539319179770663 157.4031359469857 1.0 8.0 10.0
+0.15397951212956795 157.29474374541178 1.0 8.0 10.0
+0.1539997324315836 157.2535051330928 1.0 8.0 10.0
+0.15401573279128788 157.16899088985315 1.0 8.0 10.0
+0.15401751315434054 157.158585550942 1.0 8.0 10.0
+0.15402064046427677 157.12500182541993 1.0 8.0 10.0
+0.15400914200932558 157.1541073582279 1.0 8.0 10.0
+0.15399730646252985 157.02782467748906 1.0 8.0 10.0
+0.15396835985024437 157.01339613012306 1.0 8.0 10.0
+0.15394316436306665 156.97032340153612 1.0 8.0 10.0
+0.15391348804062543 157.0322890695415 1.0 8.0 10.0
+0.15389692377689057 157.09034853524545 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742166718.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742166718_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742166718_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742166718_test_data.npy
+Cleanup complete.
+
+Simulation 3/10 score: 0.7126871146695859
+Running repeat 4/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742167717.h5ad
+Train data shape: (50000, 4971)
+Validation data shape: (25000, 4971)
+Test data shape: (25000, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_714779_1742167717'
+Loaded dataset: downsampled_5000genes_714779_1742167717
+Train data shape: (4971, 50000)
+Validation data shape: (4971, 25000)
+Test data shape: (4971, 25000)
+0.25597254483844023 94.1315122371456 1.0 8.0 10.0
+0.15469836355601785 165.05940646919947 1.0 8.0 10.0
+0.15348817060736697 161.10984340788892 1.0 8.0 10.0
+0.15311382696058207 158.85587006779573 1.0 8.0 10.0
+0.15293759033376653 158.2592373868633 1.0 8.0 10.0
+0.15290245336204722 158.11012590721867 1.0 8.0 10.0
+0.15281417842907352 158.18491697527844 1.0 8.0 10.0
+0.15277338496040382 158.27918980073883 1.0 8.0 10.0
+0.1528080618636235 158.1007495854375 1.0 8.0 10.0
+0.15288242212073133 157.8119181411199 1.0 8.0 10.0
+0.15298907481480095 157.3513218880299 1.0 8.0 10.0
+0.15307271376085996 156.98672628539367 1.0 8.0 10.0
+0.15313382572585343 156.71860537989875 1.0 8.0 10.0
+0.15318534240775472 156.60349847577646 1.0 8.0 10.0
+0.15321653130599322 156.57777848514405 1.0 8.0 10.0
+0.15322925149185762 156.54850863413515 1.0 8.0 10.0
+0.15323437247694716 156.54511161023072 1.0 8.0 10.0
+0.15324108751756227 156.5336758706058 1.0 8.0 10.0
+0.15324401887552652 156.52470183485735 1.0 8.0 10.0
+0.153240413857338 156.53278326897276 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742167717.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742167717_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742167717_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742167717_test_data.npy
+Cleanup complete.
+
+Simulation 4/10 score: 0.7147157191157917
+Running repeat 5/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742168604.h5ad
+Train data shape: (50000, 4971)
+Validation data shape: (25000, 4971)
+Test data shape: (25000, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_714779_1742168604'
+Loaded dataset: downsampled_5000genes_714779_1742168604
+Train data shape: (4971, 50000)
+Validation data shape: (4971, 25000)
+Test data shape: (4971, 25000)
+0.25306769087478287 90.91337035910509 1.0 8.0 10.0
+0.15677643822885567 160.35766988704435 1.0 8.0 10.0
+0.15569395304630596 157.1814413649568 1.0 8.0 10.0
+0.1551596708129167 155.34567084761358 1.0 8.0 10.0
+0.15442137872323558 154.54767098815188 1.0 8.0 10.0
+0.15365319356907958 153.73834961325423 1.0 8.0 10.0
+0.15355300223353985 152.95077325954188 1.0 8.0 10.0
+0.153521048941756 152.6218414942345 1.0 8.0 10.0
+0.15349058592860532 152.4420776668369 1.0 8.0 10.0
+0.15351290886966795 152.37395693345175 1.0 8.0 10.0
+0.15353119455087472 152.3101099136385 1.0 8.0 10.0
+0.15353966949292863 152.29222645293788 1.0 8.0 10.0
+0.1535379659471351 152.2875025393189 1.0 8.0 10.0
+0.15355234408103824 152.1944274940044 1.0 8.0 10.0
+0.1535616660354504 152.14019326556303 1.0 8.0 10.0
+0.15357081325369748 152.1184950036662 1.0 8.0 10.0
+0.15358013481876032 152.08702048861196 1.0 8.0 10.0
+0.15358257843293033 152.06650742893683 1.0 8.0 10.0
+0.1535882623103928 152.03632042908288 1.0 8.0 10.0
+0.15359248450618634 152.02096241535347 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742168604.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742168604_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742168604_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742168604_test_data.npy
+Cleanup complete.
+
+Simulation 5/10 score: 0.7157915279859982
+Running repeat 6/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742169593.h5ad
+Train data shape: (50000, 4971)
+Validation data shape: (25000, 4971)
+Test data shape: (25000, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_714779_1742169593'
+Loaded dataset: downsampled_5000genes_714779_1742169593
+Train data shape: (4971, 50000)
+Validation data shape: (4971, 25000)
+Test data shape: (4971, 25000)
+0.2442451965335961 100.3252077357267 1.0 8.0 10.0
+0.15832933093714108 164.0282660331049 1.0 8.0 10.0
+0.15662027333598894 163.47660996340795 1.0 8.0 10.0
+0.15606848686786234 163.44654346660818 1.0 8.0 10.0
+0.15573759141167565 163.37123603582012 1.0 8.0 10.0
+0.15541411212883793 163.0797864152957 1.0 8.0 10.0
+0.15474854678029526 162.54954399485035 1.0 8.0 10.0
+0.1539603428690588 162.36200631839588 1.0 8.0 10.0
+0.15374073200043503 161.82813078828303 1.0 8.0 10.0
+0.15373866191606966 161.38873058983623 1.0 8.0 10.0
+0.15377019207811837 161.09557441162752 1.0 8.0 10.0
+0.15385075608957044 160.73972905536561 1.0 8.0 10.0
+0.15395587573170344 160.2001662959974 1.0 8.0 10.0
+0.15409086075778045 159.6817695398438 1.0 8.0 10.0
+0.15424150966410166 159.03908479220473 1.0 8.0 10.0
+0.15436848412612025 158.51777103426085 1.0 8.0 10.0
+0.15447292882637564 158.04227224666772 1.0 8.0 10.0
+0.1545209183264742 157.71484603529584 1.0 8.0 10.0
+0.1545665309102413 157.52165752865557 1.0 8.0 10.0
+0.1546129913334251 157.44528163493442 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742169593.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742169593_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742169593_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742169593_test_data.npy
+Cleanup complete.
+
+Simulation 6/10 score: 0.7181658305915575
+Running repeat 7/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742170544.h5ad
+Train data shape: (50000, 4971)
+Validation data shape: (25000, 4971)
+Test data shape: (25000, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_714779_1742170544'
+Loaded dataset: downsampled_5000genes_714779_1742170544
+Train data shape: (4971, 50000)
+Validation data shape: (4971, 25000)
+Test data shape: (4971, 25000)
+0.2548089001625137 101.45583039424682 1.0 8.0 10.0
+0.15612265051119756 167.86743528652306 1.0 8.0 10.0
+0.15522890544679802 164.29423068199247 1.0 8.0 10.0
+0.15494144534619947 162.37852439498738 1.0 8.0 10.0
+0.15484688399335478 161.1528995397985 1.0 8.0 10.0
+0.15480854701661806 160.34339754214406 1.0 8.0 10.0
+0.15477080340940763 159.92491673561193 1.0 8.0 10.0
+0.1547241237644833 159.7610695527879 1.0 8.0 10.0
+0.1546850030367486 159.7129911719839 1.0 8.0 10.0
+0.15464956875313118 159.75852528516785 1.0 8.0 10.0
+0.15460187750455312 159.69931646349383 1.0 8.0 10.0
+0.15458314931508144 159.6525160372127 1.0 8.0 10.0
+0.15457041341389388 159.6478770568346 1.0 8.0 10.0
+0.15458144118561812 159.48045940317655 1.0 8.0 10.0
+0.1546042097959982 159.34829589863844 1.0 8.0 10.0
+0.15461803926881967 159.2774150349549 1.0 8.0 10.0
+0.15462176401878713 159.15513845866448 1.0 8.0 10.0
+0.15463736461975952 158.9896224734453 1.0 8.0 10.0
+0.15466313413483723 158.85714677874296 1.0 8.0 10.0
+0.15468386747564322 158.72153692871046 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742170544.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742170544_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742170544_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742170544_test_data.npy
+Cleanup complete.
+
+Simulation 7/10 score: 0.7146679001960156
+Running repeat 8/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742171456.h5ad
+Train data shape: (50000, 4971)
+Validation data shape: (25000, 4971)
+Test data shape: (25000, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_714779_1742171456'
+Loaded dataset: downsampled_5000genes_714779_1742171456
+Train data shape: (4971, 50000)
+Validation data shape: (4971, 25000)
+Test data shape: (4971, 25000)
+0.2524032818227193 88.58046334761136 1.0 8.0 10.0
+0.15676848531582177 157.73211943468124 1.0 8.0 10.0
+0.1554384841832186 156.15081361781313 1.0 8.0 10.0
+0.15487889757294304 155.43588683701827 1.0 8.0 10.0
+0.15469355006083263 155.08452126164264 1.0 8.0 10.0
+0.15460995558856439 154.62692047050334 1.0 8.0 10.0
+0.15453991152615032 154.371082843444 1.0 8.0 10.0
+0.15449840508282253 154.1163604777959 1.0 8.0 10.0
+0.1544601205316537 154.03131760165542 1.0 8.0 10.0
+0.15442161113231123 153.93592504931198 1.0 8.0 10.0
+0.15438016726181036 153.8819156474016 1.0 8.0 10.0
+0.1543499624012682 153.82194964056927 1.0 8.0 10.0
+0.15430798266324364 153.7430055890672 1.0 8.0 10.0
+0.15428580160226246 153.72777420899214 1.0 8.0 10.0
+0.15426511739714655 153.70838703635525 1.0 8.0 10.0
+0.15424950863681242 153.69776042517384 1.0 8.0 10.0
+0.15422950781067912 153.73595758637188 1.0 8.0 10.0
+0.1542159351376725 153.77419805824078 1.0 8.0 10.0
+0.15420849905770717 153.83367085091626 1.0 8.0 10.0
+0.15420411921287747 153.86602900219137 1.0 8.0 10.0
+U dimensions = (4971, 39)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 39)
+phi.dot(U).T shape: (39, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742171456.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742171456_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742171456_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742171456_test_data.npy
+Cleanup complete.
+
+Simulation 8/10 score: 0.7059642185197526
+Running repeat 9/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742172382.h5ad
+Train data shape: (50000, 4971)
+Validation data shape: (25000, 4971)
+Test data shape: (25000, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_714779_1742172382'
+Loaded dataset: downsampled_5000genes_714779_1742172382
+Train data shape: (4971, 50000)
+Validation data shape: (4971, 25000)
+Test data shape: (4971, 25000)
+0.24954247612288305 96.68345750774688 1.0 8.0 10.0
+0.15616928301532595 161.9356912864083 1.0 8.0 10.0
+0.15541530569521234 157.35358037749413 1.0 8.0 10.0
+0.15528633389767899 155.0595930587659 1.0 8.0 10.0
+0.15514506845258824 154.50938060453464 1.0 8.0 10.0
+0.15504659916366836 154.2900980205201 1.0 8.0 10.0
+0.1548915573654459 153.9409308845331 1.0 8.0 10.0
+0.1545536309002704 153.58267082008803 1.0 8.0 10.0
+0.1544379138576467 153.04268111647693 1.0 8.0 10.0
+0.15434963478493768 152.94907763267253 1.0 8.0 10.0
+0.1542436355506438 152.83011325676233 1.0 8.0 10.0
+0.1541716988011912 152.83633961982937 1.0 8.0 10.0
+0.1541427080985477 152.86094244121426 1.0 8.0 10.0
+0.15411564756365026 152.96767531399138 1.0 8.0 10.0
+0.15410262929915586 152.9943951601687 1.0 8.0 10.0
+0.15409630621113624 153.04194240747364 1.0 8.0 10.0
+0.15408373048549995 153.07043070614344 1.0 8.0 10.0
+0.1540706263244791 153.06960811198897 1.0 8.0 10.0
+0.15405926447509055 153.1024065137558 1.0 8.0 10.0
+0.154042732684336 153.18629467686074 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742172382.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742172382_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742172382_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742172382_test_data.npy
+Cleanup complete.
+
+Simulation 9/10 score: 0.7147391252702503
+Running repeat 10/10...
+Matched genes for 5000 set: 4971
+Downsampled dataset saved to /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742173400.h5ad
+Train data shape: (50000, 4971)
+Validation data shape: (25000, 4971)
+Test data shape: (25000, 4971)
+Datasets saved in /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse with prefix 'downsampled_5000genes_714779_1742173400'
+Loaded dataset: downsampled_5000genes_714779_1742173400
+Train data shape: (4971, 50000)
+Validation data shape: (4971, 25000)
+Test data shape: (4971, 25000)
+0.2384232428318137 92.47270461309577 1.0 8.0 10.0
+0.15775280029067817 154.1567644691616 1.0 8.0 10.0
+0.155805135836661 153.4667335531902 1.0 8.0 10.0
+0.15526900907358177 152.13762310942792 1.0 8.0 10.0
+0.1549968214811812 150.8229825632527 1.0 8.0 10.0
+0.1548007743390658 150.2719743445729 1.0 8.0 10.0
+0.1546583260865353 149.8225411695427 1.0 8.0 10.0
+0.15462624578253537 149.64350804874553 1.0 8.0 10.0
+0.15461819630803708 149.53409764117754 1.0 8.0 10.0
+0.15460633878683872 149.47968649322624 1.0 8.0 10.0
+0.15458829629846937 149.45104338940365 1.0 8.0 10.0
+0.15456149260812313 149.5070598305541 1.0 8.0 10.0
+0.1545084398076958 149.59133324399568 1.0 8.0 10.0
+0.15440404234267835 149.80018027099518 1.0 8.0 10.0
+0.15428854977818374 149.83109088795308 1.0 8.0 10.0
+0.15419759511064934 149.7743494963857 1.0 8.0 10.0
+0.1541743891669557 149.75386018421335 1.0 8.0 10.0
+0.15415773250994924 149.824937804552 1.0 8.0 10.0
+0.1541495333971481 149.85477042312874 1.0 8.0 10.0
+0.1541558053642692 149.82259256687612 1.0 8.0 10.0
+U dimensions = (4971, 40)
+Iteration 0 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 1 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 2 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 3 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+Iteration 4 of 5
+phi.shape: (200, 4971)
+U.shape: (4971, 40)
+phi.dot(U).T shape: (40, 200)
+
+Cleaning up temporary files...
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742173400.h5ad
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742173400_train_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742173400_validate_data.npy
+Deleted: /projectnb/cisi/myousry/comprsense_omics/dataset/pmotorcortex/pmotorcortex_mouse/downsampled_5000genes_714779_1742173400_test_data.npy
+Cleanup complete.
+
+Simulation 10/10 score: 0.7066607360589221
+Results saved: output/cells_experiment_repeats.csv

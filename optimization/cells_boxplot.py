@@ -26,7 +26,7 @@ sns.boxplot(x="num_cells", y="best_score", hue="gene_set_size", data=df, palette
 
 # Customize plot
 plt.xlabel("Number of Cells", fontsize=12)
-plt.ylabel("Best Score", fontsize=12)
+plt.ylabel("Score", fontsize=12)
 plt.title("Box Plot of Best Scores Across Number of Cells and Gene Set Sizes (Repeats Included)", fontsize=14)
 plt.legend(title="Gene Set Size")
 plt.grid(True)
